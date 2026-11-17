@@ -77,9 +77,9 @@
       "blocks": [
         { "type": "paragraph", "text": { "en": "When I'm not on a screen, I'm reading. A few I love:", "bg": "Когато не съм пред екран, чета. Ето няколко любими:" } },
         { "type": "list", "items": [
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } }
+          { "title": "All the Bright Places", "subtitle": { "en": "Jennifer Niven · 2015", "bg": "Дженифър Нивън · 2015" }, "note": { "en": "A young-adult novel about Finch and Violet, two teens who help each other through grief and mental-health struggles while exploring the hidden places of Indiana. Made into a Netflix film in 2020.", "bg": "Роман за тийнейджъри за Финч и Вайълет, които си помагат да преминат през скръбта и трудностите с психичното здраве, докато откриват скрити места в Индиана. Филм на Netflix от 2020 г." } },
+          { "title": "Girl Online", "subtitle": { "en": "Zoe Sugg · 2014", "bg": "Зоуи Съг · 2014" }, "note": { "en": "Zoe Sugg's (Zoella's) debut novel: Penny writes an anonymous blog called Girl Online about friendship, first love and her anxiety, and meets Noah on a trip to New York.", "bg": "Дебютният роман на Зоуи Съг (Zoella): Пени пише анонимен блог, наречен Girl Online, за приятелството, първата любов и тревожността си, а на пътуване до Ню Йорк среща Ноа." } },
+          { "title": "Slammed", "subtitle": { "en": "Colleen Hoover · 2012", "bg": "Колийн Хувър · 2012" }, "note": { "en": "Colleen Hoover's first novel: after her father dies, Layken moves from Texas to Michigan and falls for her neighbour Will, who writes slam poetry.", "bg": "Първият роман на Колийн Хувър: след смъртта на баща си Лейкън се мести от Тексас в Мичиган и се влюбва в съседа си Уил, който пише слам поезия." } }
         ] }
       ]
     }
