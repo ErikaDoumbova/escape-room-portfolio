@@ -27,7 +27,10 @@
       "x": 0.625, "y": 0.557,
       "title": { "en": "Always listening", "bg": "Винаги с музика" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "Music is on pretty much all day — while I design, edit, study, or walk around the city. PLACEHOLDER: genres / other artists you love.", "bg": "Музиката ми върви почти цял ден — докато правя дизайн, монтирам, уча или се разхождам. PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "Music is on pretty much all day — while I design, edit, study, or walk around the city.", "bg": "Музиката ми върви почти цял ден — докато правя дизайн, монтирам, уча или се разхождам." } },
+        { "type": "links", "items": [
+          { "kind": "external", "label": { "en": "My Spotify", "bg": "Моят Spotify" }, "href": "https://open.spotify.com/user/abi87myyk1ayc5xln3jb5izmj" }
+        ] },
         { "type": "sound-toggle" }
       ]
     },
@@ -37,7 +40,7 @@
       "x": 0.557, "y": 0.732,
       "title": { "en": "Studying communication", "bg": "Уча комуникации" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "I'm in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University. PLACEHOLDER: a favourite course or project.", "bg": "Втори курс съм в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University. PLACEHOLDER" } }
+        { "type": "paragraph", "text": { "en": "I'm currently in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University, and I couldn't have picked a better major. My favourite courses were last year's journalism class in Humanities and Writing for Media. My goal is to become a sports journalist, and those courses definitely taught me a lot.", "bg": "В момента съм втори курс в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University и не бих могла да избера по-добра специалност. Любимите ми курсове миналата година бяха часовете по журналистика в хуманитарните науки и „Писане за медиите“. Целта ми е да стана спортна журналистка и тези курсове определено ме научиха на много." } }
       ]
     }
   ],

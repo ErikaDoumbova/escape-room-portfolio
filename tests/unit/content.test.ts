@@ -129,14 +129,16 @@ describe('content schema', () => {
   it('warns (but does not fail) for PLACEHOLDER text, missing Bulgarian and missing images', () => {
     const report = withKitchen((k) => {
       delete (k.name as { bg?: string }).bg;
+      (k.theme as { en: string }).en = 'PLACEHOLDER theme';
     });
     expect(report.errors).toEqual([]);
     const kitchenWarnings = report.warnings.filter((w) => w.file === 'content/rooms/kitchen.json');
-    expect(kitchenWarnings.map((w) => w.message.split(':')[0])).toEqual([
-      '8 text(s) still say PLACEHOLDER',
-      '1 text(s) have no Bulgarian ("bg") version yet, so English is shown',
-      '3 image(s) use placeholder art until you upload them',
-    ]);
+    // Counts depend on how much the owner has filled in, so check the kinds of warning.
+    const kinds = kitchenWarnings.map((w) => w.message.split(':')[0]);
+    expect(kinds).toHaveLength(3);
+    expect(kinds[0]).toMatch(/^\d+ text\(s\) still say PLACEHOLDER$/);
+    expect(kinds[1]).toBe('1 text(s) have no Bulgarian ("bg") version yet, so English is shown');
+    expect(kinds[2]).toMatch(/^\d+ image\(s\) use placeholder art until you upload them$/);
   });
 
   it('formats paths like the owner sees them', () => {
