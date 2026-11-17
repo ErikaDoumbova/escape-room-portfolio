@@ -43,18 +43,24 @@
   color: var(--color-ink-soft);
 }
 
+/* Desktop: two stacked columns, so tall and wide pictures sit without gaps. */
 .gallery {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-3);
+  columns: 2;
+  column-gap: var(--space-3);
+}
+
+.gallery > li {
+  break-inside: avoid;
+  margin-bottom: var(--space-3);
 }
 
 /* Phones: a horizontal strip that snaps to each drawing. */
 @media (max-width: 899px) {
   .gallery {
+    columns: auto;
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -64,6 +70,7 @@
   }
   .gallery > li {
     flex: 0 0 72%;
+    margin-bottom: 0;
     scroll-snap-align: center;
   }
 }
