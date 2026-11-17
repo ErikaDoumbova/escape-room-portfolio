@@ -17,6 +17,16 @@
       "title": { "en": "Hi, I'm Erika", "bg": "Здравей, аз съм Ерика" },
       "blocks": [
         { "type": "paragraph", "text": { "en": "I'm a graphic designer and content creator, born and raised in Sofia, Bulgaria. Right now I'm in my second year of the Bachelor in Communication and Digital Media at IE University.", "bg": "Графичен дизайнер съм и създавам съдържание. Родена и израснала съм в София. В момента съм втори курс, специалност „Комуникация и дигитални медии“ в IE University." } },
+        { "type": "gallery", "items": [
+          { "src": "photos/name-sign/name-sign-1.jpg", "alt": { "en": "A black-and-white portrait of me laughing", "bg": "Черно-бял портрет, на който се смея" } },
+          { "src": "photos/name-sign/name-sign-2.jpg", "alt": { "en": "Me on a rooftop terrace in the evening sun", "bg": "На покривна тераса на вечерното слънце" } },
+          { "src": "photos/name-sign/name-sign-3.jpg", "alt": { "en": "Me at the GRAZIA “Under the Stars” event", "bg": "На събитието GRAZIA „Under the Stars“" } },
+          { "src": "photos/name-sign/name-sign-4.jpg", "alt": { "en": "Me celebrating with silver “200” balloons", "bg": "Празнувам със сребърни балони „200“" } },
+          { "src": "photos/name-sign/name-sign-5.jpg", "alt": { "en": "Me in a sun hat, holding a net bag of lemons under a lemon tree", "bg": "Със сламена шапка и торба лимони под лимоново дърво" } },
+          { "src": "photos/name-sign/name-sign-6.jpg", "alt": { "en": "A smiling selfie in a brown jumper", "bg": "Усмихнато селфи в кафяв пуловер" } },
+          { "src": "photos/name-sign/name-sign-7.jpg", "alt": { "en": "Me lying among flowers in a white dress", "bg": "Лежа сред цветя в бяла рокля" } },
+          { "src": "photos/name-sign/name-sign-8.jpg", "alt": { "en": "Me in a pink hoodie with a white dog at sunset", "bg": "С розов суитшърт и бяло куче по залез" } }
+        ] },
         { "type": "paragraph", "text": { "en": "This is my house — every room tells you something about me. Click anything that glows, and use the arrows to move between rooms.", "bg": "Това е моята къща — всяка стая разказва нещо за мен. Кликни върху всичко, което свети, и използвай стрелките, за да минаваш от стая в стая." } }
       ]
     },
@@ -27,6 +37,7 @@
       "title": { "en": "Get in touch", "bg": "Пиши ми" },
       "blocks": [
         { "type": "paragraph", "text": { "en": "Want to collaborate, chat about design, or just say hi? My mailbox is always open.", "bg": "Искаш да работим заедно, да си поговорим за дизайн или просто да кажеш здрасти? Пощенската ми кутия е винаги отворена." } },
+        { "type": "image", "src": "photos/mailbox.jpg", "alt": { "en": "Me in a grey suit, posing in a lift doorway", "bg": "В сив костюм, позирам на вратата на асансьор" } },
         { "type": "links", "items": [
           { "kind": "email", "label": { "en": "Email me", "bg": "Пиши ми имейл" } },
           { "kind": "instagram", "label": { "en": "Instagram @erika.doumbova", "bg": "Instagram @erika.doumbova" } },

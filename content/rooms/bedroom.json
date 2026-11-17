@@ -40,7 +40,19 @@
       "x": 0.557, "y": 0.732,
       "title": { "en": "Studying communication", "bg": "Уча комуникации" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "I'm currently in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University, and I couldn't have picked a better major. My favourite courses were last year's journalism class in Humanities and Writing for Media. My goal is to become a sports journalist, and those courses definitely taught me a lot.", "bg": "В момента съм втори курс в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University и не бих могла да избера по-добра специалност. Любимите ми курсове миналата година бяха часовете по журналистика в хуманитарните науки и „Писане за медиите“. Целта ми е да стана спортна журналистка и тези курсове определено ме научиха на много." } }
+        { "type": "paragraph", "text": { "en": "I'm currently in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University, and I couldn't have picked a better major. My favourite courses were last year's journalism class in Humanities and Writing for Media. My goal is to become a sports journalist, and those courses definitely taught me a lot.", "bg": "В момента съм втори курс в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University и не бих могла да избера по-добра специалност. Любимите ми курсове миналата година бяха часовете по журналистика в хуманитарните науки и „Писане за медиите“. Целта ми е да стана спортна журналистка и тези курсове определено ме научиха на много." } },
+        { "type": "gallery", "items": [
+          { "src": "photos/notebook/notebook-1.jpg", "alt": { "en": "A photography class: students with cameras photograph me as I pose on a stool in the studio", "bg": "Час по фотография: студенти с фотоапарати ме снимат, докато позирам на стол в студиото" } },
+          { "src": "photos/notebook/notebook-2.jpg", "alt": { "en": "Me and friends smiling at a crowded university event", "bg": "Аз и приятели се усмихваме на многолюдно събитие в университета" } },
+          { "src": "photos/notebook/notebook-3.jpg", "alt": { "en": "Me sitting with a camera in a dark photo studio, next to a studio light", "bg": "Седя с фотоапарат в тъмно фотостудио до студийна лампа" } },
+          { "src": "photos/notebook/notebook-4.jpg", "alt": { "en": "Me in front of a big “Welcome home” sign on a glass building", "bg": "Пред голям надпис „Welcome home“ на стъклена сграда" } },
+          { "src": "photos/notebook/notebook-5.jpg", "alt": { "en": "Me sitting by a tall window with a view over the city", "bg": "Седя до висок прозорец с гледка към града" } },
+          { "src": "photos/notebook/notebook-6.jpg", "alt": { "en": "A selfie in a green beanie, making a peace sign", "bg": "Селфи със зелена шапка и знак за мир" } },
+          { "src": "photos/notebook/notebook-7.jpg", "alt": { "en": "Me on a terrace with a suitcase and a guitar case", "bg": "На тераса с куфар и калъф за китара" } },
+          { "src": "photos/notebook/notebook-8.jpg", "alt": { "en": "Gold foil balloons on a white backdrop", "bg": "Златни фолиеви балони на бял фон" } },
+          { "src": "photos/notebook/notebook-9.jpg", "alt": { "en": "Me with three friends, lying on the grass on campus", "bg": "Аз с трима приятели, излегнати на тревата в кампуса" } },
+          { "src": "photos/notebook/notebook-10.jpg", "alt": { "en": "Me with three friends, sitting on the grass in front of the campus buildings", "bg": "Аз с трима приятели, седнали на тревата пред сградите на кампуса" } }
+        ] }
       ]
     },
     {
