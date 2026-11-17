@@ -3,7 +3,7 @@
   "name": { "en": "Front", "bg": "Входът" },
   "theme": { "en": "Hi, I'm Erika", "bg": "Здравей, аз съм Ерика" },
   "image": "rooms/front.png",
-  "imageAlt": { "en": "A warm yellow apartment building with balconies, flower boxes and a rooftop terrace", "bg": "Топла жълта жилищна сграда с балкони, сандъчета с цветя и тераса на покрива" },
+  "imageAlt": { "en": "A warm yellow apartment building with balconies, flower boxes and a rooftop terrace, surrounded by a garden with trees and flowers", "bg": "Топла жълта жилищна сграда с балкони, сандъчета с цветя и тераса на покрива, заобиколена от градина с дървета и цветя" },
   "initialFocusX": 0.5,
   "ambientSoundByPhase": { "morning": "audio/birds", "day": "audio/birds", "sunset": "audio/crickets", "night": "audio/crickets" },
   "doorways": [
