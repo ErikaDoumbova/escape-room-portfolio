@@ -68,30 +68,6 @@
       ]
     },
     {
-      "id": "ring-light",
-      "enabled": false,
-      "name": { "en": "Ring light", "bg": "Ринг лампа" },
-      "x": 0.20, "y": 0.50,
-      "title": { "en": "Creating content", "bg": "Създаване на съдържание" },
-      "blocks": [
-        { "type": "paragraph", "text": { "en": "This corner is where a lot of my content gets made. PLACEHOLDER: what you create (topics, formats) and what you love about it.", "bg": "В този ъгъл се ражда голяма част от съдържанието ми. PLACEHOLDER" } },
-        { "type": "links", "items": [
-          { "kind": "instagram", "label": { "en": "See it on Instagram", "bg": "Виж в Instagram" } },
-          { "kind": "tiktok", "label": { "en": "See it on TikTok", "bg": "Виж в TikTok" } }
-        ] }
-      ]
-    },
-    {
-      "id": "tv-sports",
-      "enabled": false,
-      "name": { "en": "TV & sports paper", "bg": "Телевизор и спортен вестник" },
-      "x": 0.76, "y": 0.42,
-      "title": { "en": "Future sports journalist", "bg": "Бъдеща спортна журналистка" },
-      "blocks": [
-        { "type": "paragraph", "text": { "en": "My big goal: becoming a sports journalist — while keeping my content-creation career growing alongside it. PLACEHOLDER: which sports/teams you follow and the story you'd love to cover one day.", "bg": "Голямата ми цел: да стана спортна журналистка — и паралелно да развивам кариерата си в създаването на съдържание. PLACEHOLDER" } }
-      ]
-    },
-    {
       "id": "bookshelf",
       "name": { "en": "Bookshelf", "bg": "Етажерка с книги" },
       "x": 0.429, "y": 0.749,
@@ -107,11 +83,7 @@
     }
   ],
   "lights": [
-    { "id": "floor-lamp", "kind": "lamp", "x": 0.12, "y": 0.34, "radius": 0.08, "color": "#FFD58A", "phases": ["sunset", "night"] },
-    { "id": "tv", "kind": "screen", "x": 0.76, "y": 0.38, "radius": 0.07, "color": "#BFD9FF", "phases": ["night"] },
-    { "id": "ring", "kind": "lamp", "x": 0.20, "y": 0.44, "radius": 0.05, "color": "#FFF4E0", "phases": ["night"] }
+    { "id": "floor-lamp", "kind": "lamp", "x": 0.12, "y": 0.34, "radius": 0.08, "color": "#FFD58A", "phases": ["sunset", "night"] }
   ],
-  "effects": [
-    { "type": "flicker", "lightId": "tv", "phases": ["night"] }
-  ]
+  "effects": []
 }
