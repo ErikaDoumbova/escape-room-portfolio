@@ -1,7 +1,11 @@
 name: Build and deploy
 
+# main = the live site. dev = work in progress: every push to dev (and every
+# pull request into main) runs the same checks and tests, but only main deploys.
 on:
   push:
+    branches: [main, dev]
+  pull_request:
     branches: [main]
   workflow_dispatch:
 
@@ -10,8 +14,9 @@ permissions:
   pages: write
   id-token: write
 
+# One run per branch at a time; a newer push cancels the older run.
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -66,11 +71,13 @@ jobs:
           path: playwright-report
           retention-days: 7
 
-      - uses: actions/upload-pages-artifact@v5
+      - if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
         with:
           path: dist
 
   deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:

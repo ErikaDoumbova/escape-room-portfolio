@@ -11,6 +11,11 @@ Every push to `main` is built, tested, and deployed to GitHub Pages by
 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Check the repo's **Actions** tab:
 a green ✓ means the site is live.
 
+**Branches:** `main` is the live site. Development happens on `dev`, where every push runs the same
+checks and tests without deploying; publishing means merging `dev` into `main`. Edits made directly
+on `main` in the GitHub web editor (text, images) still go live straight away, so merge `main` back
+into `dev` before starting new work.
+
 ## For developers
 
 Requires Node.js (version in `.nvmrc`).
