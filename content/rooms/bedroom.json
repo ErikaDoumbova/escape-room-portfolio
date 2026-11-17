@@ -3,7 +3,7 @@
   "name": { "en": "Bedroom", "bg": "Спалня" },
   "theme": { "en": "What I love", "bg": "Какво обичам" },
   "image": "rooms/bedroom.png",
-  "imageAlt": { "en": "A cozy bedroom with fairy lights, a canopy bed, a framed music poster, headphones by the bedside lamp and a little desk with a laptop and a notebook", "bg": "Уютна спалня със светлинки, легло с балдахин, рамкиран музикален плакат, слушалки до нощната лампа и малко бюро с лаптоп и тетрадка" },
+  "imageAlt": { "en": "A cozy bedroom with fairy lights, a canopy bed, a framed music poster, headphones by the bedside lamp, a ring light on a tripod and a little desk with a laptop and a notebook", "bg": "Уютна спалня със светлинки, легло с балдахин, рамкиран музикален плакат, слушалки до нощната лампа, ринг лампа на статив и малко бюро с лаптоп и тетрадка" },
   "initialFocusX": 0.5,
   "ambientSound": "audio/vinyl",
   "doorways": [
@@ -17,7 +17,7 @@
       "title": { "en": "My favourite artist", "bg": "Любимият ми изпълнител" },
       "blocks": [
         { "type": "image", "src": "photos/concert.jpg", "alt": { "en": "Me at a Shawn Mendes concert, laughing and singing along, with him on the big screen behind me", "bg": "Аз на концерт на Шон Мендес — смея се и пея, а той е на големия екран зад мен" } },
-        { "type": "paragraph", "text": { "en": "Shawn Mendes has been my favourite artist for years — and yes, this poster really is on my wall. PLACEHOLDER: why his music matters to you / a favourite song.", "bg": "Шон Мендес е любимият ми изпълнител от години — и да, този плакат наистина виси на стената ми. PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "Maybe it's a cliché that Shawn Mendes is my favourite artist, but his music has really helped me in my personal life. I've gone through a ton of hard moments, and the one song that's always on repeat is “There's Nothing Holdin' Me Back”. When I lost one of my best friends from high school to cancer, his music is what helped me cope. I like his morals and values, and I think he's a good example of how a famous person should act.", "bg": "Може би е клише, че Шон Мендес е любимият ми изпълнител, но музиката му наистина ми е помагала в личния живот. Преминала съм през много трудни моменти и песента, която винаги е на повторение, е „There's Nothing Holdin' Me Back“. Когато загубих един от най-близките си хора от гимназията заради рак, неговата музика ми помогна да се справя. Харесвам неговия морал и ценности и смятам, че той е добър пример за това как трябва да се държи един известен човек." } },
         { "type": "spotify", "title": { "en": "My favourites", "bg": "Любимите ми песни" } }
       ]
     },
@@ -27,7 +27,10 @@
       "x": 0.625, "y": 0.557,
       "title": { "en": "Always listening", "bg": "Винаги с музика" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "Music is on pretty much all day — while I design, edit, study, or walk around the city. PLACEHOLDER: genres / other artists you love.", "bg": "Музиката ми върви почти цял ден — докато правя дизайн, монтирам, уча или се разхождам. PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "Music is on pretty much all day — while I design, edit, study, or walk around the city.", "bg": "Музиката ми върви почти цял ден — докато правя дизайн, монтирам, уча или се разхождам." } },
+        { "type": "links", "items": [
+          { "kind": "external", "label": { "en": "My Spotify", "bg": "Моят Spotify" }, "href": "https://open.spotify.com/user/abi87myyk1ayc5xln3jb5izmj" }
+        ] },
         { "type": "sound-toggle" }
       ]
     },
@@ -37,7 +40,21 @@
       "x": 0.557, "y": 0.732,
       "title": { "en": "Studying communication", "bg": "Уча комуникации" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "I'm in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University. PLACEHOLDER: a favourite course or project.", "bg": "Втори курс съм в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University. PLACEHOLDER" } }
+        { "type": "paragraph", "text": { "en": "I'm currently in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University, and I couldn't have picked a better major. My favourite courses were last year's journalism class in Humanities and Writing for Media. My goal is to become a sports journalist, and those courses definitely taught me a lot.", "bg": "В момента съм втори курс в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University и не бих могла да избера по-добра специалност. Любимите ми курсове миналата година бяха часовете по журналистика в хуманитарните науки и „Писане за медиите“. Целта ми е да стана спортна журналистка и тези курсове определено ме научиха на много." } }
+      ]
+    },
+    {
+      "id": "ring-light",
+      "name": { "en": "Ring light", "bg": "Ринг лампа" },
+      "x": 0.682, "y": 0.512,
+      "title": { "en": "Creating content", "bg": "Създаване на съдържание" },
+      "blocks": [
+        { "type": "paragraph", "text": { "en": "I started filming YouTube videos 12 years ago, and it completely changed my life. Now I create content for all social media platforms, and I have over 500k followers across YouTube, Instagram and TikTok. Working with brands such as Disney, Puma, Fanta, UNICEF, Eucerin, Sephora and many more has taught me how important it is to stay true to yourself and your beliefs.", "bg": "Започнах да снимам видеа за YouTube преди 12 години и това напълно промени живота ми. Сега създавам съдържание за всички социални мрежи и имам над 500 хиляди последователи в YouTube, Instagram и TikTok. Работата с марки като Disney, Puma, Fanta, UNICEF, Eucerin, Sephora и много други ме научи колко е важно да останеш верен на себе си и на убежденията си." } },
+        { "type": "links", "items": [
+          { "kind": "external", "label": { "en": "YouTube @ErikaDoumbova", "bg": "YouTube @ErikaDoumbova" }, "href": "https://www.youtube.com/@ErikaDoumbova" },
+          { "kind": "instagram", "label": { "en": "Instagram @erika.doumbova", "bg": "Instagram @erika.doumbova" } },
+          { "kind": "tiktok", "label": { "en": "TikTok @eri_doumbova", "bg": "TikTok @eri_doumbova" } }
+        ] }
       ]
     }
   ],

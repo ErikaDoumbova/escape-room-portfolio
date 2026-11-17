@@ -18,8 +18,8 @@
       "x": 0.436, "y": 0.228, "zoom": { "scale": 2.2 },
       "title": { "en": "Lemons", "bg": "Лимони" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-1.png", "alt": { "en": "A painting of lemons with green leaves on a wooden cutting board, on a grey background", "bg": "Картина с лимони и зелени листа върху дървена дъска, на сив фон" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-1.png", "alt": { "en": "A painting of lemons with green leaves on a wooden cutting board, on a grey background", "bg": "Картина с лимони и зелени листа върху дървена дъска, на сив фон" }, "caption": { "en": "Tempera", "bg": "Темпера" } },
+        { "type": "paragraph", "text": { "en": "I painted this with tempera, and working with the shadows was a good challenge for me. Fun fact: the only colours I used were the primaries red, blue and yellow — every other colour here comes from mixing them.", "bg": "Нарисувах я с темпера и работата със сенките беше добро предизвикателство за мен. Интересен факт: използвах само основните цветове — червено, синьо и жълто, а всички останали цветове тук са получени чрез смесването им." } }
       ]
     },
     {
@@ -28,8 +28,8 @@
       "x": 0.513, "y": 0.215, "zoom": { "scale": 2.2 },
       "title": { "en": "Forest in watercolour", "bg": "Гора в акварел" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-2.png", "alt": { "en": "A watercolour of a misty forest with tall trees and soft light between them", "bg": "Акварел на мъглива гора с високи дървета и мека светлина между тях" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-2.png", "alt": { "en": "A watercolour of a misty forest with tall trees and soft light between them", "bg": "Акварел на мъглива гора с високи дървета и мека светлина между тях" }, "caption": { "en": "Watercolour", "bg": "Акварел" } },
+        { "type": "paragraph", "text": { "en": "It's inspired by Claude Monet and the way he expresses himself on the canvas. It was my first time using watercolour, and to me this painting means peace.", "bg": "Вдъхновена е от Клод Моне и начина, по който той се изразява върху платното. За първи път рисувах с акварел и за мен тази картина означава спокойствие." } }
       ]
     },
     {
@@ -38,8 +38,8 @@
       "x": 0.565, "y": 0.257, "zoom": { "scale": 2.2 },
       "title": { "en": "Flower in a light bulb", "bg": "Цвете в крушка" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-3.png", "alt": { "en": "An ink line drawing of a flower growing out of a broken light bulb", "bg": "Рисунка с линии на цвете, което расте от счупена крушка" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-3.png", "alt": { "en": "An ink line drawing of a flower growing out of a broken light bulb", "bg": "Рисунка с линии на цвете, което расте от счупена крушка" }, "caption": { "en": "Fine-point pen on paper", "bg": "Тънкописец върху хартия" } },
+        { "type": "paragraph", "text": { "en": "A very simple drawing made with just a fine-point pen. To me it shows how my creativity sometimes comes out in the most unexpected ways.", "bg": "Много семпла рисунка, направена само с тънкописец. За мен тя показва как креативността ми понякога се проявява по най-неочаквани начини." } }
       ]
     },
     {
@@ -59,12 +59,12 @@
       "x": 0.57, "y": 0.625,
       "title": { "en": "My design work", "bg": "Моят дизайн" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "A few of my graphic design projects: ads, a poster, a brochure and a magazine. PLACEHOLDER: a sentence about the project you're proudest of.", "bg": "Някои от проектите ми по графичен дизайн: реклами, плакат, брошура и списание. PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "Having a diploma in graphic design is so nice, because now I know my way around Adobe Illustrator, Photoshop and InDesign. My favourite project is definitely my final diploma project: I had to create a brand identity for a made-up travel agency, Travelia, and think of ways it could be marketed.", "bg": "Дипломата ми по графичен дизайн е страхотна, защото вече познавам Adobe Illustrator, Photoshop и InDesign. Любимият ми проект определено е дипломният: трябваше да създам бранд идентичност за измислена туристическа агенция, Travelia, и да измисля как да бъде рекламирана." } },
         { "type": "gallery", "items": [
           { "src": "art/designs/design-1.jpg", "alt": { "en": "An ad for Bin Cosmetics: a mascara stroke becomes the skid marks of a white car, with the line \"Don't make-up and drive\"", "bg": "Реклама за Bin Cosmetics: следа от спирала се превръща в следи от гуми на бяла кола, с надпис „Don't make-up and drive“" }, "caption": { "en": "Ad concept for Bin Cosmetics", "bg": "Рекламна концепция за Bin Cosmetics" } },
           { "src": "art/designs/design-2.jpg", "alt": { "en": "A poster with the word APRIL repeated in white on blue, and puffy pink 3D numbers 2024 floating over it", "bg": "Плакат с думата APRIL, повторена в бяло на син фон, и розови 3D цифри 2024 над нея" }, "caption": { "en": "April 2024 poster", "bg": "Плакат „Април 2024“" } },
-          { "src": "art/designs/design-3.jpg", "alt": { "en": "A tri-fold travel brochure for Travelia, with turquoise sea photos and location-pin shapes", "bg": "Сгъваема туристическа брошура за Travelia със снимки на тюркоазено море и форми на маркери за местоположение" }, "caption": { "en": "Travelia brochure", "bg": "Брошура за Travelia" } },
-          { "src": "art/designs/design-4.jpg", "alt": { "en": "A magazine ad for Travelia: a plane flying through a location-pin cut-out with palm trees and clouds", "bg": "Реклама на Travelia в списание: самолет, който лети през изрязан маркер с палми и облаци" }, "caption": { "en": "Travelia magazine ad", "bg": "Реклама на Travelia в списание" } },
+          { "src": "art/designs/design-3.jpg", "alt": { "en": "A tri-fold travel brochure for Travelia, with turquoise sea photos and location-pin shapes", "bg": "Сгъваема туристическа брошура за Travelia със снимки на тюркоазено море и форми на маркери за местоположение" }, "caption": { "en": "Travelia brochure · diploma project", "bg": "Брошура за Travelia · дипломен проект" } },
+          { "src": "art/designs/design-4.jpg", "alt": { "en": "A magazine ad for Travelia: a plane flying through a location-pin cut-out with palm trees and clouds", "bg": "Реклама на Travelia в списание: самолет, който лети през изрязан маркер с палми и облаци" }, "caption": { "en": "Travelia magazine ad · diploma project", "bg": "Реклама на Travelia в списание · дипломен проект" } },
           { "src": "art/designs/design-5.jpg", "alt": { "en": "Front and back cover of LYRIC music magazine, with black-and-white photos of Shawn Mendes", "bg": "Предна и задна корица на музикалното списание LYRIC с черно-бели снимки на Шон Мендес" }, "caption": { "en": "LYRIC magazine cover", "bg": "Корица на списание LYRIC" } }
         ] }
       ]
@@ -77,9 +77,9 @@
       "blocks": [
         { "type": "paragraph", "text": { "en": "When I'm not on a screen, I'm reading. A few I love:", "bg": "Когато не съм пред екран, чета. Ето няколко любими:" } },
         { "type": "list", "items": [
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } }
+          { "title": "All the Bright Places", "subtitle": { "en": "Jennifer Niven · 2015", "bg": "Дженифър Нивън · 2015" }, "note": { "en": "A young-adult novel about Finch and Violet, two teens who help each other through grief and mental-health struggles while exploring the hidden places of Indiana. Made into a Netflix film in 2020.", "bg": "Роман за тийнейджъри за Финч и Вайълет, които си помагат да преминат през скръбта и трудностите с психичното здраве, докато откриват скрити места в Индиана. Филм на Netflix от 2020 г." } },
+          { "title": "Girl Online", "subtitle": { "en": "Zoe Sugg · 2014", "bg": "Зоуи Съг · 2014" }, "note": { "en": "Zoe Sugg's (Zoella's) debut novel: Penny writes an anonymous blog called Girl Online about friendship, first love and her anxiety, and meets Noah on a trip to New York.", "bg": "Дебютният роман на Зоуи Съг (Zoella): Пени пише анонимен блог, наречен Girl Online, за приятелството, първата любов и тревожността си, а на пътуване до Ню Йорк среща Ноа." } },
+          { "title": "Slammed", "subtitle": { "en": "Colleen Hoover · 2012", "bg": "Колийн Хувър · 2012" }, "note": { "en": "Colleen Hoover's first novel: after her father dies, Layken moves from Texas to Michigan and falls for her neighbour Will, who writes slam poetry.", "bg": "Първият роман на Колийн Хувър: след смъртта на баща си Лейкън се мести от Тексас в Мичиган и се влюбва в съседа си Уил, който пише слам поезия." } }
         ] }
       ]
     }

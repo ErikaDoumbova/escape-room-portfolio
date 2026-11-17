@@ -17,7 +17,7 @@
       "title": { "en": "Пълнени чушки — stuffed peppers", "bg": "Пълнени чушки" },
       "blocks": [
         { "type": "image", "src": "objects/stuffed-peppers.png", "alt": { "en": "Stuffed peppers baked golden with a yogurt topping", "bg": "Пълнени чушки, запечени до златисто със заливка от кисело мляко" } },
-        { "type": "paragraph", "text": { "en": "My favourite Bulgarian dish — peppers stuffed with rice and minced meat, baked with a golden yogurt topping. It tastes like home. PLACEHOLDER: who makes them in your family / when you eat them.", "bg": "Любимото ми българско ястие — чушки с ориз и кайма, запечени със златиста заливка от кисело мляко. Вкусът на дома. PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "Food to me is tied to memories, and stuffed peppers remind me of my childhood and the time I spent making them with my grandma. They're not hard to make, but when I was younger it felt like I got to spend the whole day cooking with her. To this day, this is the food I crave the most when I'm away from home.", "bg": "За мен храната е свързана със спомени, а пълнените чушки ми напомнят за детството и времето, когато ги правех с баба ми. Не са трудни за приготвяне, но като малка ми се струваше, че прекарвам цял ден в готвене с нея. И до днес това е храната, за която най-много копнея, когато съм далеч от вкъщи." } },
         {
           "type": "recipe",
           "servings": 4,
@@ -55,7 +55,7 @@
       "title": { "en": "Sofia, my city", "bg": "София, моят град" },
       "blocks": [
         { "type": "image", "src": "photos/nevsky.jpg", "alt": { "en": "The Alexander Nevsky Cathedral in Sofia with its golden domes", "bg": "Храм-паметникът „Св. Александър Невски“ в София със златните си куполи" } },
-        { "type": "paragraph", "text": { "en": "I was born and raised in Sofia, Bulgaria. My favourite place in the city is the Alexander Nevsky Cathedral — PLACEHOLDER: why it's special to you / a memory there.", "bg": "Родена и израснала съм в София. Любимото ми място в града е храм-паметникът „Св. Александър Невски“ — PLACEHOLDER" } }
+        { "type": "paragraph", "text": { "en": "I was born and raised in Sofia, Bulgaria. The Alexander Nevsky Cathedral is my escape from the chaos, even though it's always full of tourists. I'm Christian, and the energy inside is unreal. I love going to the midnight Christmas mass.", "bg": "Родена и израснала съм в София. Храм-паметникът „Св. Александър Невски“ е моето убежище от хаоса, въпреки че винаги е пълен с туристи. Християнка съм и енергията вътре е невероятна. Обичам да ходя на полунощната коледна служба." } }
       ]
     },
     {
