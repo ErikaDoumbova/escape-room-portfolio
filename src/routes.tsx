@@ -1,21 +1,16 @@
-import { Navigate, Route, Routes, useParams } from 'react-router';
+import { Route, Routes } from 'react-router';
 
-import { HelloHouse } from './components/HelloHouse/HelloHouse.tsx';
-import { liveRoomIds } from './content/site.ts';
+import { House } from './components/House/House.tsx';
 
-/** `/:room` and `/:room/:object`. Unknown rooms go back to the front door. */
-function RoomRoute() {
-  const { room } = useParams();
-  if (!room || !liveRoomIds.includes(room)) return <Navigate to="/" replace />;
-  return <HelloHouse />;
-}
-
+/**
+ * All house URLs ("/", "/kitchen", "/kitchen/stuffed-peppers", unknown paths)
+ * render the same House so room changes can animate between rooms.
+ * M4 adds "/tour" above the catch-all.
+ */
 export function AppRoutes() {
   return (
     <Routes>
-      <Route index element={<HelloHouse />} />
-      <Route path=":room/:object?" element={<RoomRoute />} />
-      <Route path="*" element={<Navigate to="/" replace />} />
+      <Route path="*" element={<House />} />
     </Routes>
   );
 }

@@ -1,0 +1,55 @@
+{
+  "id": "bedroom",
+  "name": { "en": "Bedroom", "bg": "Спалня" },
+  "theme": { "en": "What I love", "bg": "Какво обичам" },
+  "image": "rooms/bedroom.png",
+  "imageAlt": { "en": "A cozy bedroom with a Shawn Mendes poster on the wall, headphones on the nightstand, a bookshelf and soft fairy lights", "bg": "Уютна спалня с плакат на Шон Мендес, слушалки на нощното шкафче, етажерка с книги и светлинки" },
+  "initialFocusX": 0.5,
+  "ambientSound": "audio/vinyl",
+  "doorways": [
+    { "to": "living-room", "x": 0.10, "y": 0.60, "direction": "left" }
+  ],
+  "objects": [
+    {
+      "id": "shawn-poster",
+      "name": { "en": "Shawn Mendes poster", "bg": "Плакат на Шон Мендес" },
+      "x": 0.45, "y": 0.26, "zoom": { "scale": 2.0 },
+      "title": { "en": "My favourite artist", "bg": "Любимият ми изпълнител" },
+      "blocks": [
+        { "type": "image", "src": "photos/wall-poster.jpg", "alt": { "en": "My bedroom wall with the Shawn Mendes poster", "bg": "Стената в стаята ми с плаката на Шон Мендес" } },
+        { "type": "paragraph", "text": { "en": "Shawn Mendes has been my favourite artist for years — and yes, this poster really is on my wall. PLACEHOLDER: why his music matters to you / a favourite song.", "bg": "Шон Мендес е любимият ми изпълнител от години — и да, този плакат наистина виси на стената ми. PLACEHOLDER" } },
+        { "type": "spotify", "title": { "en": "My favourites", "bg": "Любимите ми песни" } }
+      ]
+    },
+    {
+      "id": "headphones",
+      "name": { "en": "Headphones", "bg": "Слушалки" },
+      "x": 0.68, "y": 0.56,
+      "title": { "en": "Always listening", "bg": "Винаги с музика" },
+      "blocks": [
+        { "type": "paragraph", "text": { "en": "Music is on pretty much all day — while I design, edit, study, or walk around the city. PLACEHOLDER: genres / other artists you love.", "bg": "Музиката ми върви почти цял ден — докато правя дизайн, монтирам, уча или се разхождам. PLACEHOLDER" } },
+        { "type": "sound-toggle" }
+      ]
+    },
+    {
+      "id": "bookshelf",
+      "name": { "en": "Bookshelf", "bg": "Етажерка с книги" },
+      "x": 0.84, "y": 0.38,
+      "title": { "en": "On my shelf", "bg": "На рафта ми" },
+      "blocks": [
+        { "type": "paragraph", "text": { "en": "When I'm not on a screen, I'm reading. A few I love:", "bg": "Когато не съм пред екран, чета. Ето няколко любими:" } },
+        { "type": "list", "items": [
+          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
+          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
+          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } }
+        ] }
+      ]
+    }
+  ],
+  "lights": [
+    { "id": "bedside", "kind": "lamp", "x": 0.62, "y": 0.46, "radius": 0.08, "color": "#FFD58A", "phases": ["sunset", "night"] }
+  ],
+  "effects": [
+    { "type": "twinkle", "points": [ {"x":0.30,"y":0.18}, {"x":0.40,"y":0.16}, {"x":0.50,"y":0.15}, {"x":0.60,"y":0.16}, {"x":0.70,"y":0.18} ], "color": "#FFE2A8", "phases": ["sunset", "night"] }
+  ]
+}

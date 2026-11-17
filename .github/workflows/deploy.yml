@@ -27,6 +27,19 @@ jobs:
 
       - run: npm ci
 
+      # Processed images only change when the uploads or the image scripts change.
+      - name: Reuse processed images
+        uses: actions/cache@v6
+        with:
+          path: |
+            public/generated
+            .cache/images.json
+          key: images-${{ hashFiles('assets-src/**', 'scripts/process-images.mjs', 'scripts/lib/placeholders.mjs') }}
+          restore-keys: images-
+
+      # Checks the owner's content first: friendly errors, and warnings for what's left to fill in.
+      - run: npm run validate-content
+
       # "/" for a <username>.github.io repo, "/<repo>/" for any other repo (handoff §15.2).
       - name: Compute base path
         run: |

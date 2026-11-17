@@ -19,7 +19,9 @@ Requires Node.js (version in `.nvmrc`).
 npm install
 npm run dev          # local dev server
 npm run typecheck && npm run lint && npm test
-npm run build        # vite build + per-route index.html copies (scripts/spa-routes.mjs)
+npm run validate-content  # check content/*.json (friendly errors + "still to fill in" warnings)
+npm run placeholders # redraw placeholder art in assets-src/_placeholders/ from the room JSON
+npm run build        # validate + process images + vite build + per-route pages (spa-routes.mjs)
 npm run preview      # serve dist/ the way GitHub Pages does
 npm run test:e2e     # Playwright + axe against dist/ (PW_CHANNEL=chrome to use installed Chrome)
 ```

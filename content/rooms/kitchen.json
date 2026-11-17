@@ -1,0 +1,77 @@
+{
+  "id": "kitchen",
+  "name": { "en": "Kitchen", "bg": "Кухня" },
+  "theme": { "en": "Where I'm from", "bg": "Откъде съм" },
+  "image": "rooms/kitchen.png",
+  "imageAlt": { "en": "A warm kitchen with a steaming pot of stuffed peppers on the stove and a fridge with a magnet of the Alexander Nevsky Cathedral", "bg": "Топла кухня с тенджера пълнени чушки на котлона и хладилник с магнит на храм-паметника „Св. Александър Невски“" },
+  "initialFocusX": 0.5,
+  "ambientSound": "audio/kitchen-simmer",
+  "doorways": [
+    { "to": "living-room", "x": 0.08, "y": 0.60, "direction": "left" }
+  ],
+  "objects": [
+    {
+      "id": "stuffed-peppers",
+      "name": { "en": "Pot of stuffed peppers", "bg": "Тенджера с пълнени чушки" },
+      "x": 0.43, "y": 0.47, "zoom": { "scale": 2.0 },
+      "title": { "en": "Пълнени чушки — stuffed peppers", "bg": "Пълнени чушки" },
+      "blocks": [
+        { "type": "image", "src": "objects/stuffed-peppers.png", "alt": { "en": "Stuffed peppers baked golden with a yogurt topping", "bg": "Пълнени чушки, запечени до златисто със заливка от кисело мляко" } },
+        { "type": "paragraph", "text": { "en": "My favourite Bulgarian dish — peppers stuffed with rice and minced meat, baked with a golden yogurt topping. It tastes like home. PLACEHOLDER: who makes them in your family / when you eat them.", "bg": "Любимото ми българско ястие — чушки с ориз и кайма, запечени със златиста заливка от кисело мляко. Вкусът на дома. PLACEHOLDER" } },
+        {
+          "type": "recipe",
+          "servings": 4,
+          "time": { "en": "About 1 h 30 min", "bg": "Около 1 ч 30 мин" },
+          "ingredients": [
+            { "en": "8–10 bell peppers", "bg": "8–10 чушки (камби)" },
+            { "en": "500 g minced meat (pork and beef mix)", "bg": "500 г смесена кайма" },
+            { "en": "150 g (¾ cup) rice", "bg": "150 г ориз" },
+            { "en": "1 onion, finely chopped", "bg": "1 глава лук, ситно нарязан" },
+            { "en": "1 carrot, grated (optional)", "bg": "1 морков, настърган (по желание)" },
+            { "en": "1 grated tomato or 2 tbsp tomato paste", "bg": "1 настърган домат или 2 с. л. доматено пюре" },
+            { "en": "1 tsp sweet paprika", "bg": "1 ч. л. червен пипер" },
+            { "en": "1 tsp dried savory (чубрица)", "bg": "1 ч. л. чубрица" },
+            { "en": "Salt, black pepper, a little fresh parsley", "bg": "Сол, черен пипер, малко пресен магданоз" },
+            { "en": "3 tbsp sunflower oil", "bg": "3 с. л. олио" },
+            { "en": "For the topping: 400 g Bulgarian yogurt, 1 egg, 1 tbsp flour", "bg": "За заливката: 400 г кисело мляко, 1 яйце, 1 с. л. брашно" }
+          ],
+          "steps": [
+            { "en": "Cut the tops off the peppers and remove the seeds. Keep the tops.", "bg": "Отрежи дръжките на чушките и почисти семките. Запази капачетата." },
+            { "en": "Warm the oil in a pan and soften the onion (and carrot) for about 5 minutes.", "bg": "Загрей олиото в тиган и задуши лука (и моркова) около 5 минути." },
+            { "en": "Add the minced meat and cook, breaking it up, until it changes colour.", "bg": "Добави каймата и я запържи, като я разбиваш, докато промени цвета си." },
+            { "en": "Stir in the paprika, then the rice, tomato, savory, salt and pepper. Add a splash of water and cook for 3–4 minutes. Take off the heat and add the parsley.", "bg": "Добави червения пипер, после ориза, домата, чубрицата, солта и черния пипер. Налей малко вода и остави 3–4 минути. Свали от котлона и добави магданоза." },
+            { "en": "Fill the peppers loosely (the rice will grow) and close them with their tops.", "bg": "Напълни чушките, без да ги натъпкваш (оризът набъбва), и ги затвори с капачетата." },
+            { "en": "Stand them upright in a baking dish, pour in warm water up to about half their height, and bake at 180 °C for about 60 minutes.", "bg": "Нареди ги изправени в тава, налей топла вода до около половината им височина и печи на 180 °C около 60 минути." },
+            { "en": "Whisk the yogurt, egg and flour. Pour over the peppers and bake for another 15 minutes until golden.", "bg": "Разбий киселото мляко с яйцето и брашното. Залей чушките и печи още 15 минути, докато се зачервят." }
+          ],
+          "tip": { "en": "Even better the next day. Serve with an extra spoon of yogurt.", "bg": "На следващия ден са още по-вкусни. Сервирай с още една лъжица кисело мляко." }
+        }
+      ]
+    },
+    {
+      "id": "nevsky-magnet",
+      "name": { "en": "Fridge magnet", "bg": "Магнит на хладилника" },
+      "x": 0.74, "y": 0.36, "zoom": { "scale": 2.4 },
+      "title": { "en": "Sofia, my city", "bg": "София, моят град" },
+      "blocks": [
+        { "type": "image", "src": "photos/nevsky.jpg", "alt": { "en": "The Alexander Nevsky Cathedral in Sofia with its golden domes", "bg": "Храм-паметникът „Св. Александър Невски“ в София със златните си куполи" } },
+        { "type": "paragraph", "text": { "en": "I was born and raised in Sofia, Bulgaria. My favourite place in the city is the Alexander Nevsky Cathedral — PLACEHOLDER: why it's special to you / a memory there.", "bg": "Родена и израснала съм в София. Любимото ми място в града е храм-паметникът „Св. Александър Невски“ — PLACEHOLDER" } }
+      ]
+    },
+    {
+      "id": "kitchen-window",
+      "enabled": false,
+      "name": { "en": "Window", "bg": "Прозорец" },
+      "x": 0.58, "y": 0.22,
+      "title": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" },
+      "blocks": [ { "type": "paragraph", "text": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } } ]
+    }
+  ],
+  "lights": [
+    { "id": "pendant", "kind": "lamp", "x": 0.50, "y": 0.18, "radius": 0.10, "color": "#FFD58A", "phases": ["sunset", "night"] },
+    { "id": "hob", "kind": "lamp", "x": 0.43, "y": 0.52, "radius": 0.035, "color": "#FF9A5A", "phases": ["morning", "day", "sunset", "night"] }
+  ],
+  "effects": [
+    { "type": "steam", "x": 0.43, "y": 0.43 }
+  ]
+}

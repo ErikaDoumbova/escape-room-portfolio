@@ -19,6 +19,7 @@ body {
   line-height: var(--leading-md);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--dur-room) var(--ease-cozy);
 }
 
 h1,

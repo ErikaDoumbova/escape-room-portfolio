@@ -50,3 +50,13 @@ if (missing.length) {
     `⚠ spa-routes: no room file yet for ${missing.join(', ')} (page uses the site title)`,
   );
 }
+
+// Owner-facing summary of what's left to fill in (written by validate-content.mjs).
+const warningsFile = join(root, '.cache', 'content-warnings.json');
+if (existsSync(warningsFile)) {
+  const warnings = JSON.parse(await readFile(warningsFile, 'utf8'));
+  if (warnings.length) {
+    console.log(`\nStill to fill in (${warnings.length} note(s); the site works without them):`);
+    for (const w of warnings) console.log(`  • ${w.file}: ${w.message.split(':')[0]}`);
+  }
+}

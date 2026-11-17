@@ -1,0 +1,52 @@
+{
+  "id": "front",
+  "name": { "en": "Front", "bg": "Входът" },
+  "theme": { "en": "Hi, I'm Erika", "bg": "Здравей, аз съм Ерика" },
+  "image": "rooms/front.png",
+  "imageAlt": { "en": "A cozy pastel house with a tiled roof, a front door, a mailbox and a street lamp", "bg": "Уютна пастелна къща с керемиден покрив, входна врата, пощенска кутия и уличен фенер" },
+  "initialFocusX": 0.5,
+  "ambientSoundByPhase": { "morning": "audio/birds", "day": "audio/birds", "sunset": "audio/crickets", "night": "audio/crickets" },
+  "doorways": [
+    { "to": "living-room", "x": 0.52, "y": 0.52, "direction": "up", "label": { "en": "Come in →", "bg": "Влез →" } }
+  ],
+  "objects": [
+    {
+      "id": "name-sign",
+      "name": { "en": "Name sign", "bg": "Табелка с име" },
+      "x": 0.40, "y": 0.50,
+      "title": { "en": "Hi, I'm Erika", "bg": "Здравей, аз съм Ерика" },
+      "blocks": [
+        { "type": "paragraph", "text": { "en": "I'm a graphic designer and content creator, born and raised in Sofia, Bulgaria. Right now I'm in my second year of the Bachelor in Communication and Digital Media at IE University.", "bg": "Графичен дизайнер съм и създавам съдържание. Родена и израснала съм в София. В момента съм втори курс, специалност „Комуникация и дигитални медии“ в IE University." } },
+        { "type": "paragraph", "text": { "en": "This is my house — every room tells you something about me. Click anything that glows, and use the arrows to move between rooms.", "bg": "Това е моята къща — всяка стая разказва нещо за мен. Кликни върху всичко, което свети, и използвай стрелките, за да минаваш от стая в стая." } }
+      ]
+    },
+    {
+      "id": "mailbox",
+      "name": { "en": "Mailbox", "bg": "Пощенска кутия" },
+      "x": 0.66, "y": 0.62,
+      "title": { "en": "Get in touch", "bg": "Пиши ми" },
+      "blocks": [
+        { "type": "paragraph", "text": { "en": "Want to collaborate, chat about design, or just say hi? My mailbox is always open.", "bg": "Искаш да работим заедно, да си поговорим за дизайн или просто да кажеш здрасти? Пощенската ми кутия е винаги отворена." } },
+        { "type": "links", "items": [
+          { "kind": "email", "label": { "en": "Email me", "bg": "Пиши ми имейл" } },
+          { "kind": "instagram", "label": { "en": "Instagram @erika.doumbova", "bg": "Instagram @erika.doumbova" } },
+          { "kind": "tiktok", "label": { "en": "TikTok @eri_doumbova", "bg": "TikTok @eri_doumbova" } }
+        ] }
+      ]
+    },
+    {
+      "id": "street-lamp",
+      "name": { "en": "Street lamp", "bg": "Уличен фенер" },
+      "x": 0.84, "y": 0.40,
+      "special": "cycle-lighting",
+      "bubble": { "en": "I'm a night person, honestly. Click me again.", "bg": "Честно казано, аз съм нощна птица. Кликни пак." },
+      "title": { "en": "Street lamp", "bg": "Уличен фенер" },
+      "blocks": []
+    }
+  ],
+  "lights": [
+    { "id": "window-left", "kind": "window", "x": 0.33, "y": 0.42, "radius": 0.05, "w": 1, "h": 1.3, "color": "#FFD58A", "phases": ["sunset", "night"] },
+    { "id": "street-lamp", "kind": "lamp", "x": 0.84, "y": 0.30, "radius": 0.09, "color": "#FFD58A", "phases": ["sunset", "night"] },
+    { "id": "porch", "kind": "lamp", "x": 0.52, "y": 0.44, "radius": 0.05, "color": "#FFE2A8", "phases": ["night"] }
+  ]
+}

@@ -1,0 +1,24 @@
+.lqip,
+.full,
+.missing {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.lqip {
+  filter: blur(18px);
+  transform: scale(1.03);
+}
+
+.full {
+  opacity: 0;
+  transition: opacity var(--dur-room) var(--ease-out-soft);
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.full[data-loaded] {
+  opacity: 1;
+}
