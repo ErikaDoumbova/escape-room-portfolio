@@ -1,0 +1,34 @@
+.hello {
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-4);
+  text-align: center;
+}
+
+.house {
+  width: 56px;
+  height: 56px;
+  fill: none;
+  stroke: var(--color-terracotta);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  margin-bottom: var(--space-2);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-2xl);
+  line-height: var(--leading-2xl);
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  color: var(--color-ink-soft);
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+}

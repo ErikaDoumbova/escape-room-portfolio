@@ -1,0 +1,94 @@
+{
+  "name": { "en": "Erika Doumbova", "bg": "Ерика Думбова" },
+  "tagline": {
+    "en": "Graphic designer & content creator",
+    "bg": "Графичен дизайнер и създател на съдържание"
+  },
+  "intro": {
+    "en": "Hi, I'm Erika — a graphic designer and content creator from Sofia, Bulgaria. Come in and look around: everything that glows has a story.",
+    "bg": "Здравей, аз съм Ерика — графичен дизайнер и създател на съдържание от София. Влез и разгледай: всичко, което свети, има своя история."
+  },
+  "rooms": ["front", "living-room", "bedroom", "kitchen"],
+  "contact": {
+    "email": { "user": "erika.doumbova", "domain": "gmail.com" },
+    "instagram": {
+      "handle": "@erika.doumbova",
+      "url": "https://www.instagram.com/erika.doumbova/"
+    },
+    "tiktok": { "handle": "@eri_doumbova", "url": "https://www.tiktok.com/@eri_doumbova" }
+  },
+  "spotifyEmbedUrl": "",
+  "features": { "guestbook": false },
+  "seo": {
+    "title": {
+      "en": "Erika Doumbova · graphic designer & content creator",
+      "bg": "Ерика Думбова · графичен дизайнер и създател на съдържание"
+    },
+    "description": {
+      "en": "Step into Erika's cozy house and click around to discover her design work, what she loves, and where she's from.",
+      "bg": "Влез в уютната къща на Ерика и разгледай нейния дизайн, нещата, които обича, и откъде е."
+    },
+    "siteUrl": "https://PLACEHOLDER-USERNAME.github.io"
+  },
+  "ui": {
+    "explore": { "en": "Explore", "bg": "Разгледай" },
+    "exploreTitle": { "en": "Explore the house", "bg": "Разгледай къщата" },
+    "progress": {
+      "en": "You've discovered {found} of {total} things",
+      "bg": "Откри {found} от {total} неща"
+    },
+    "quickTourLink": {
+      "en": "Prefer reading? Take the quick tour",
+      "bg": "Предпочиташ да четеш? Виж бързата обиколка"
+    },
+    "quickTourTitle": { "en": "Quick tour", "bg": "Бърза обиколка" },
+    "backToHouse": { "en": "Back to the house", "bg": "Обратно в къщата" },
+    "skipToTour": { "en": "Skip to the text version", "bg": "Към текстовата версия" },
+    "close": { "en": "Close", "bg": "Затвори" },
+    "previous": { "en": "Previous", "bg": "Предишно" },
+    "nextInRoom": { "en": "Next in this room", "bg": "Следващо в стаята" },
+    "open": { "en": "Open", "bg": "Отвори" },
+    "goTo": { "en": "Go to", "bg": "Към" },
+    "comeIn": { "en": "Come in", "bg": "Влез" },
+    "soundOn": { "en": "Turn sound on", "bg": "Включи звука" },
+    "soundOff": { "en": "Turn sound off", "bg": "Изключи звука" },
+    "lighting": { "en": "Lighting", "bg": "Осветление" },
+    "auto": { "en": "auto", "bg": "автоматично" },
+    "phase.morning": { "en": "Morning", "bg": "Сутрин" },
+    "phase.day": { "en": "Day", "bg": "Ден" },
+    "phase.sunset": { "en": "Sunset", "bg": "Залез" },
+    "phase.night": { "en": "Night", "bg": "Нощ" },
+    "welcome": {
+      "en": "Welcome in. Click anything that glows. ✦",
+      "bg": "Добре дошъл. Кликни върху всичко, което свети. ✦"
+    },
+    "gotIt": { "en": "Got it", "bg": "Разбрах" },
+    "swipeHint": { "en": "Swipe to look around ↔", "bg": "Плъзни, за да разгледаш ↔" },
+    "copyEmail": { "en": "Copy email", "bg": "Копирай имейла" },
+    "copied": { "en": "Copied", "bg": "Копирано" },
+    "loadPlayer": { "en": "Load player", "bg": "Зареди плейъра" },
+    "spotifyNotice": {
+      "en": "Loading this shares data with Spotify.",
+      "bg": "Зареждането споделя данни със Spotify."
+    },
+    "playlistSoon": { "en": "Playlist coming soon", "bg": "Плейлистът идва скоро" },
+    "ingredients": { "en": "Ingredients", "bg": "Продукти" },
+    "steps": { "en": "Method", "bg": "Начин на приготвяне" },
+    "servings": { "en": "Serves {n}", "bg": "За {n} порции" },
+    "printRecipe": { "en": "Print recipe", "bg": "Принтирай рецептата" },
+    "notFound": { "en": "That room doesn't exist (yet)", "bg": "Тази стая (още) не съществува" },
+    "allFound": {
+      "en": "You've seen everything. Thanks for visiting my home 🧡",
+      "bg": "Видя всичко. Благодаря, че намина 🧡"
+    },
+    "sayHi": { "en": "Say hi", "bg": "Кажи здрасти" },
+    "privacyNote": {
+      "en": "This site doesn't use cookies or tracking. Your progress and settings stay in your browser.",
+      "bg": "Сайтът не използва бисквитки или проследяване. Напредъкът и настройките ти остават в браузъра ти."
+    },
+    "editModeHint": {
+      "en": "Edit mode: click the image to get coordinates",
+      "bg": "Режим на редакция: кликни върху изображението за координати"
+    }
+  }
+}
