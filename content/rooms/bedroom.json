@@ -62,6 +62,13 @@
       "title": { "en": "Creating content", "bg": "Създаване на съдържание" },
       "blocks": [
         { "type": "paragraph", "text": { "en": "I started filming YouTube videos 12 years ago, and it completely changed my life. Now I create content for all social media platforms, and I have over 500k followers across YouTube, Instagram and TikTok. Working with brands such as Disney, Puma, Fanta, UNICEF, Eucerin, Sephora and many more has taught me how important it is to stay true to yourself and your beliefs.", "bg": "Започнах да снимам видеа за YouTube преди 12 години и това напълно промени живота ми. Сега създавам съдържание за всички социални мрежи и имам над 500 хиляди последователи в YouTube, Instagram и TikTok. Работата с марки като Disney, Puma, Fanta, UNICEF, Eucerin, Sephora и много други ме научи колко е важно да останеш верен на себе си и на убежденията си." } },
+        { "type": "gallery", "items": [
+          { "src": "photos/ring-light/ring-light-1.jpg", "alt": { "en": "My YouTube Silver Play Button for passing 100,000 subscribers", "bg": "Сребърният ми бутон от YouTube за над 100 000 абонати" }, "caption": { "en": "YouTube Silver Play Button", "bg": "Сребърен бутон от YouTube" } },
+          { "src": "photos/ring-light/ring-light-2.jpg", "alt": { "en": "A Bulgarian magazine interview with me, headlined “I go to concerts alone and always have fun”", "bg": "Интервю с мен в „Галерия Живот“: „Ходя сама на концерти и винаги се забавлявам“" }, "caption": { "en": "Interview in Galeria Zhivot", "bg": "Интервю в „Галерия Живот“" } },
+          { "src": "photos/ring-light/ring-light-3.jpg", "alt": { "en": "Celebrating 200k followers with silver balloons", "bg": "Празнувам 200 хиляди последователи със сребърни балони" }, "caption": { "en": "200k followers", "bg": "200 хиляди последователи" } },
+          { "src": "photos/ring-light/ring-light-4.jpg", "alt": { "en": "Celebrating 100k with blue balloons", "bg": "Празнувам 100 хиляди със сини балони" }, "caption": { "en": "100k followers", "bg": "100 хиляди последователи" } },
+          { "src": "photos/ring-light/ring-light-5.jpg", "alt": { "en": "Me at the European Parliament, in front of the plenary chamber", "bg": "В Европейския парламент, пред пленарната зала" }, "caption": { "en": "European Parliament", "bg": "Европейски парламент" } }
+        ] },
         { "type": "links", "items": [
           { "kind": "external", "label": { "en": "YouTube @ErikaDoumbova", "bg": "YouTube @ErikaDoumbova" }, "href": "https://www.youtube.com/@ErikaDoumbova" },
           { "kind": "instagram", "label": { "en": "Instagram @erika.doumbova", "bg": "Instagram @erika.doumbova" } },
