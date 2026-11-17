@@ -3,19 +3,19 @@
   "name": { "en": "Living room", "bg": "Всекидневна" },
   "theme": { "en": "What I make & where I'm going", "bg": "Какво създавам и накъде вървя" },
   "image": "rooms/living-room.png",
-  "imageAlt": { "en": "A warm living room with framed posters on the wall, a sofa, a coffee table with a sketchbook, a ring light, a TV showing a football match and a desk with a notebook", "bg": "Топла всекидневна с рамкирани плакати, диван, масичка със скицник, ринг лампа, телевизор с мач и бюро с тетрадка" },
+  "imageAlt": { "en": "A warm living room with four framed posters on the wall, a sofa, a coffee table with a sketchbook, low bookshelves, plants and a folding screen", "bg": "Топла всекидневна с четири рамкирани плаката, диван, масичка със скицник, ниски етажерки с книги, растения и параван" },
   "initialFocusX": 0.5,
   "ambientSound": "audio/living-room",
   "doorways": [
-    { "to": "front", "x": 0.08, "y": 0.62, "direction": "left" },
-    { "to": "bedroom", "x": 0.30, "y": 0.30, "direction": "up" },
-    { "to": "kitchen", "x": 0.92, "y": 0.55, "direction": "right" }
+    { "to": "front", "x": 0.22, "y": 0.66, "direction": "left" },
+    { "to": "bedroom", "x": 0.407, "y": 0.482, "direction": "up" },
+    { "to": "kitchen", "x": 0.8, "y": 0.547, "direction": "right" }
   ],
   "objects": [
     {
       "id": "poster-1",
       "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
-      "x": 0.42, "y": 0.26, "zoom": { "scale": 2.2 },
+      "x": 0.436, "y": 0.228, "zoom": { "scale": 2.2 },
       "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
       "blocks": [
         { "type": "image", "src": "art/posters/poster-1.png", "alt": { "en": "PLACEHOLDER — describe the poster", "bg": "PLACEHOLDER" }, "caption": { "en": "PLACEHOLDER year · tools", "bg": "PLACEHOLDER" } },
@@ -25,7 +25,7 @@
     {
       "id": "poster-2",
       "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
-      "x": 0.52, "y": 0.24, "zoom": { "scale": 2.2 },
+      "x": 0.513, "y": 0.215, "zoom": { "scale": 2.2 },
       "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
       "blocks": [
         { "type": "image", "src": "art/posters/poster-2.png", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
@@ -35,7 +35,7 @@
     {
       "id": "poster-3",
       "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
-      "x": 0.62, "y": 0.26, "zoom": { "scale": 2.2 },
+      "x": 0.565, "y": 0.257, "zoom": { "scale": 2.2 },
       "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
       "blocks": [
         { "type": "image", "src": "art/posters/poster-3.png", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
@@ -43,9 +43,19 @@
       ]
     },
     {
+      "id": "poster-4",
+      "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
+      "x": 0.618, "y": 0.3, "zoom": { "scale": 2.2 },
+      "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
+      "blocks": [
+        { "type": "image", "src": "art/posters/poster-4.png", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } }
+      ]
+    },
+    {
       "id": "sketchbook",
       "name": { "en": "Sketchbook", "bg": "Скицник" },
-      "x": 0.48, "y": 0.66,
+      "x": 0.57, "y": 0.625,
       "title": { "en": "Where it started", "bg": "Откъдето започна всичко" },
       "blocks": [
         { "type": "paragraph", "text": { "en": "Before design software, there was this — drawings from my high-school years. PLACEHOLDER: a sentence on what drawing meant to you then.", "bg": "Преди дизайнерските програми беше това — рисунки от гимназията. PLACEHOLDER" } },
@@ -59,6 +69,7 @@
     },
     {
       "id": "ring-light",
+      "enabled": false,
       "name": { "en": "Ring light", "bg": "Ринг лампа" },
       "x": 0.20, "y": 0.50,
       "title": { "en": "Creating content", "bg": "Създаване на съдържание" },
@@ -72,6 +83,7 @@
     },
     {
       "id": "tv-sports",
+      "enabled": false,
       "name": { "en": "TV & sports paper", "bg": "Телевизор и спортен вестник" },
       "x": 0.76, "y": 0.42,
       "title": { "en": "Future sports journalist", "bg": "Бъдеща спортна журналистка" },
@@ -80,12 +92,17 @@
       ]
     },
     {
-      "id": "ie-notebook",
-      "name": { "en": "Notebook", "bg": "Тетрадка" },
-      "x": 0.86, "y": 0.70,
-      "title": { "en": "Studying communication", "bg": "Уча комуникации" },
+      "id": "bookshelf",
+      "name": { "en": "Bookshelf", "bg": "Етажерка с книги" },
+      "x": 0.429, "y": 0.749,
+      "title": { "en": "On my shelf", "bg": "На рафта ми" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "I'm in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University. PLACEHOLDER: a favourite course or project.", "bg": "Втори курс съм в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University. PLACEHOLDER" } }
+        { "type": "paragraph", "text": { "en": "When I'm not on a screen, I'm reading. A few I love:", "bg": "Когато не съм пред екран, чета. Ето няколко любими:" } },
+        { "type": "list", "items": [
+          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
+          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
+          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } }
+        ] }
       ]
     }
   ],

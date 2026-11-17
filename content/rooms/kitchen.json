@@ -7,13 +7,13 @@
   "initialFocusX": 0.5,
   "ambientSound": "audio/kitchen-simmer",
   "doorways": [
-    { "to": "living-room", "x": 0.08, "y": 0.60, "direction": "left" }
+    { "to": "living-room", "x": 0.254, "y": 0.508, "direction": "left" }
   ],
   "objects": [
     {
       "id": "stuffed-peppers",
       "name": { "en": "Pot of stuffed peppers", "bg": "Тенджера с пълнени чушки" },
-      "x": 0.43, "y": 0.47, "zoom": { "scale": 2.0 },
+      "x": 0.398, "y": 0.475, "zoom": { "scale": 2.0 },
       "title": { "en": "Пълнени чушки — stuffed peppers", "bg": "Пълнени чушки" },
       "blocks": [
         { "type": "image", "src": "objects/stuffed-peppers.png", "alt": { "en": "Stuffed peppers baked golden with a yogurt topping", "bg": "Пълнени чушки, запечени до златисто със заливка от кисело мляко" } },
@@ -51,7 +51,7 @@
     {
       "id": "nevsky-magnet",
       "name": { "en": "Fridge magnet", "bg": "Магнит на хладилника" },
-      "x": 0.74, "y": 0.36, "zoom": { "scale": 2.4 },
+      "x": 0.705, "y": 0.492, "zoom": { "scale": 2.4 },
       "title": { "en": "Sofia, my city", "bg": "София, моят град" },
       "blocks": [
         { "type": "image", "src": "photos/nevsky.jpg", "alt": { "en": "The Alexander Nevsky Cathedral in Sofia with its golden domes", "bg": "Храм-паметникът „Св. Александър Невски“ в София със златните си куполи" } },
@@ -62,7 +62,7 @@
       "id": "kitchen-window",
       "enabled": false,
       "name": { "en": "Window", "bg": "Прозорец" },
-      "x": 0.58, "y": 0.22,
+      "x": 0.631, "y": 0.339,
       "title": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" },
       "blocks": [ { "type": "paragraph", "text": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } } ]
     }

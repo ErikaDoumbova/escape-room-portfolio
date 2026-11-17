@@ -6,6 +6,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { checkContent } from '../src/content/checks.ts';
+import { findImageFiles } from './lib/content-files.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 // In CI this runs twice (its own step, then inside `npm run build`); annotate once.
@@ -19,8 +20,30 @@ const roomFiles = readdirSync(roomsDir)
   .sort()
   .map((f) => read(`content/rooms/${f}`));
 
-const imageExists = (p) => existsSync(join(root, 'assets-src', p));
+const assetsDir = join(root, 'assets-src');
+const imageExists = (p) => findImageFiles(assetsDir, p).length > 0;
 const report = checkContent(read('content/site.json'), roomFiles, imageExists);
+
+// Two uploads for the same picture (e.g. kitchen.jpg and kitchen.png): say which one is used.
+for (const room of report.rooms) {
+  for (const p of new Set([
+    room.image,
+    ...room.objects.flatMap((o) =>
+      o.blocks.flatMap((b) =>
+        b.type === 'image' ? [b.src] : b.type === 'gallery' ? b.items.map((i) => i.src) : [],
+      ),
+    ),
+  ])) {
+    const files = findImageFiles(assetsDir, p);
+    if (files.length > 1) {
+      const names = files.map((f) => f.slice(assetsDir.length + 1));
+      report.warnings.push({
+        file: `content/rooms/${room.id}.json`,
+        message: `there are ${files.length} files for ${p}: ${names.join(', ')}. Using ${names[0]}; delete the others to avoid confusion.`,
+      });
+    }
+  }
+}
 
 /** GitHub shows these on the run's summary page. */
 const annotate = (level, p) => {

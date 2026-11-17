@@ -3,17 +3,17 @@
   "name": { "en": "Bedroom", "bg": "Спалня" },
   "theme": { "en": "What I love", "bg": "Какво обичам" },
   "image": "rooms/bedroom.png",
-  "imageAlt": { "en": "A cozy bedroom with a Shawn Mendes poster on the wall, headphones on the nightstand, a bookshelf and soft fairy lights", "bg": "Уютна спалня с плакат на Шон Мендес, слушалки на нощното шкафче, етажерка с книги и светлинки" },
+  "imageAlt": { "en": "A cozy bedroom with fairy lights, a canopy bed, a framed music poster, headphones by the bedside lamp and a little desk with a laptop", "bg": "Уютна спалня със светлинки, легло с балдахин, рамкиран музикален плакат, слушалки до нощната лампа и малко бюро с лаптоп" },
   "initialFocusX": 0.5,
   "ambientSound": "audio/vinyl",
   "doorways": [
-    { "to": "living-room", "x": 0.10, "y": 0.60, "direction": "left" }
+    { "to": "living-room", "x": 0.254, "y": 0.495, "direction": "left" }
   ],
   "objects": [
     {
       "id": "shawn-poster",
       "name": { "en": "Shawn Mendes poster", "bg": "Плакат на Шон Мендес" },
-      "x": 0.45, "y": 0.26, "zoom": { "scale": 2.0 },
+      "x": 0.636, "y": 0.352, "zoom": { "scale": 2.0 },
       "title": { "en": "My favourite artist", "bg": "Любимият ми изпълнител" },
       "blocks": [
         { "type": "image", "src": "photos/wall-poster.jpg", "alt": { "en": "My bedroom wall with the Shawn Mendes poster", "bg": "Стената в стаята ми с плаката на Шон Мендес" } },
@@ -24,7 +24,7 @@
     {
       "id": "headphones",
       "name": { "en": "Headphones", "bg": "Слушалки" },
-      "x": 0.68, "y": 0.56,
+      "x": 0.625, "y": 0.557,
       "title": { "en": "Always listening", "bg": "Винаги с музика" },
       "blocks": [
         { "type": "paragraph", "text": { "en": "Music is on pretty much all day — while I design, edit, study, or walk around the city. PLACEHOLDER: genres / other artists you love.", "bg": "Музиката ми върви почти цял ден — докато правя дизайн, монтирам, уча или се разхождам. PLACEHOLDER" } },
@@ -32,17 +32,12 @@
       ]
     },
     {
-      "id": "bookshelf",
-      "name": { "en": "Bookshelf", "bg": "Етажерка с книги" },
-      "x": 0.84, "y": 0.38,
-      "title": { "en": "On my shelf", "bg": "На рафта ми" },
+      "id": "ie-notebook",
+      "name": { "en": "Laptop", "bg": "Лаптоп" },
+      "x": 0.609, "y": 0.68,
+      "title": { "en": "Studying communication", "bg": "Уча комуникации" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "When I'm not on a screen, I'm reading. A few I love:", "bg": "Когато не съм пред екран, чета. Ето няколко любими:" } },
-        { "type": "list", "items": [
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } },
-          { "title": "PLACEHOLDER Book title", "subtitle": { "en": "Author", "bg": "Автор" }, "note": { "en": "Why I love it.", "bg": "Защо я обичам." } }
-        ] }
+        { "type": "paragraph", "text": { "en": "I'm in my second year of the Bachelor in Communication and Digital Media (BCDM) at IE University. PLACEHOLDER: a favourite course or project.", "bg": "Втори курс съм в бакалавърската програма „Комуникация и дигитални медии“ (BCDM) в IE University. PLACEHOLDER" } }
       ]
     }
   ],

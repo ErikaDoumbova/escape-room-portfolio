@@ -17,7 +17,7 @@ import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 
 import { roomImagePaths } from '../src/content/checks.ts';
-import { readContent } from './lib/content-files.mjs';
+import { findImageFiles, readContent } from './lib/content-files.mjs';
 import { cardPlaceholderSvg, imageOwners, roomPlaceholderSvg } from './lib/placeholders.mjs';
 
 const VERSION = 1; // bump to force regeneration when the processing below changes
@@ -45,10 +45,10 @@ export function variantWidths(steps, sourceWidth) {
 
 /** Resolve an image: real upload → committed placeholder → placeholder drawn now. */
 function resolveSource(path) {
-  const real = join(root, 'assets-src', path);
-  if (existsSync(real)) return { buffer: readFileSync(real), placeholder: false };
-  const ph = join(root, 'assets-src', '_placeholders', path);
-  if (existsSync(ph)) return { buffer: readFileSync(ph), placeholder: true };
+  const [real] = findImageFiles(join(root, 'assets-src'), path);
+  if (real) return { buffer: readFileSync(real), placeholder: false };
+  const [ph] = findImageFiles(join(root, 'assets-src', '_placeholders'), path);
+  if (ph) return { buffer: readFileSync(ph), placeholder: true };
   warnings.push(`no file or placeholder for assets-src/${path}; drew a temporary placeholder`);
   const owner = owners.get(path);
   const svg = owner?.room
