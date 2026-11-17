@@ -13,7 +13,7 @@ const kitchen = {
       name: { en: 'Pot of stuffed peppers' },
       blocks: [{ type: 'paragraph', text: { en: 'My grandmother makes these every Sunday.' } }],
     },
-    { id: 'window', enabled: false, name: { en: 'Window' } },
+    { id: 'window', enabled: false, name: { en: 'Window' }, blocks: [{ type: 'paragraph' }] },
     {
       id: 'magnet',
       name: { en: 'Fridge magnet' },
@@ -51,11 +51,15 @@ describe('computeRoutes', () => {
       id: 'front',
       name: { en: 'Front' },
       theme: { en: 'Hello' },
-      objects: [{ id: 'mailbox', name: { en: 'Mailbox' } }],
+      objects: [
+        { id: 'mailbox', name: { en: 'Mailbox' }, blocks: [{ type: 'links' }] },
+        { id: 'street-lamp', name: { en: 'Street lamp' }, special: 'cycle-lighting', blocks: [] },
+      ],
     };
     const paths = computeRoutes(site, { front }).map((r) => r.path);
     expect(paths.filter((p) => p === '')).toHaveLength(1);
     expect(paths).toContain('front/mailbox');
+    expect(paths).not.toContain('front/street-lamp');
   });
 });
 

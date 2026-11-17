@@ -86,6 +86,13 @@
       "en": "This site doesn't use cookies or tracking. Your progress and settings stay in your browser.",
       "bg": "Сайтът не използва бисквитки или проследяване. Напредъкът и настройките ти остават в браузъра ти."
     },
+    "next": { "en": "Next", "bg": "Следващо" },
+    "enlargeImage": { "en": "Enlarge image", "bg": "Увеличи изображението" },
+    "counter": { "en": "{n} of {total}", "bg": "{n} от {total}" },
+    "tip": { "en": "Tip", "bg": "Съвет" },
+    "soundIsOn": { "en": "Room sound is on", "bg": "Звукът в стаята е включен" },
+    "soundIsOff": { "en": "Room sound is off", "bg": "Звукът в стаята е изключен" },
+    "visited": { "en": "seen", "bg": "видяно" },
     "editModeHint": {
       "en": "Edit mode: click the image to get coordinates",
       "bg": "Режим на редакция: кликни върху изображението за координати"

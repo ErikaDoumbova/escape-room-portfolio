@@ -2,7 +2,7 @@
 
 /**
  * @typedef {{ en: string, bg?: string }} L10n
- * @typedef {{ id: string, enabled?: boolean, name: L10n, blocks?: Array<{ type: string, text?: L10n }> }} RoomObjectLike
+ * @typedef {{ id: string, enabled?: boolean, special?: string, name: L10n, blocks?: Array<{ type: string, text?: L10n }> }} RoomObjectLike
  * @typedef {{ id: string, name: L10n, theme: L10n, objects?: RoomObjectLike[] }} RoomLike
  * @typedef {{ name: L10n, rooms: string[], seo: { title: L10n, description: L10n } }} SiteLike
  * @typedef {{ path: string, title: string, description: string }} PageRoute
@@ -37,7 +37,8 @@ export function computeRoutes(site, roomsById) {
     if (!room) continue;
 
     for (const obj of room.objects ?? []) {
-      if (obj.enabled === false) continue;
+      // Disabled objects and the street lamp (no close-up) get no page.
+      if (obj.enabled === false || obj.special || !obj.blocks?.length) continue;
       const firstParagraph = obj.blocks?.find((b) => b.type === 'paragraph' && b.text)?.text?.en;
       routes.push({
         path: `${roomId}/${obj.id}`,

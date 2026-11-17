@@ -5,6 +5,7 @@ import { Link } from 'react-router';
 import { assetUrl, getImage } from '../../content/images.ts';
 import { enabledObjects, liveRooms, objectPath, roomPath } from '../../content/load.ts';
 import { useT } from '../../content/useT.ts';
+import { useVisited, visitedKey } from '../../state/contexts.ts';
 import { ContactRow } from './ContactRow.tsx';
 import styles from './ExploreMenu.module.css';
 
@@ -21,6 +22,7 @@ interface Props {
  */
 export function ExploreMenu({ open, onClose, returnFocusRef }: Props) {
   const { t, ui } = useT();
+  const { visited } = useVisited();
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const wasOpen = useRef(false);
@@ -96,6 +98,12 @@ export function ExploreMenu({ open, onClose, returnFocusRef }: Props) {
                           className={styles.objectLink}
                           onClick={onClose}
                         >
+                          {visited.has(visitedKey(room.id, obj.id)) && (
+                            <>
+                              <span aria-hidden="true">✓&nbsp;</span>
+                              <span className="visually-hidden">({ui('visited')}) </span>
+                            </>
+                          )}
                           {t(obj.name)}
                         </Link>
                       </li>

@@ -1,10 +1,12 @@
 import { ArrowDown, ArrowLeft, ArrowRight, ArrowUp } from 'lucide-react';
-import type { CSSProperties } from 'react';
+import { useEffect, useState, type CSSProperties } from 'react';
 import { Link, useNavigate } from 'react-router';
 
+import { assetUrl, getImage } from '../../content/images.ts';
 import { enabledObjects, getLiveRoom, objectPath, roomPath } from '../../content/load.ts';
 import type { Doorway, Room, RoomObject } from '../../content/schema.ts';
 import { useT } from '../../content/useT.ts';
+import { usePhase, useVisited, visitedKey } from '../../state/contexts.ts';
 import styles from './Pins.module.css';
 
 type PinItem = { kind: 'object'; item: RoomObject } | { kind: 'doorway'; item: Doorway };
@@ -21,7 +23,33 @@ const position = (x: number, y: number): CSSProperties => ({
   top: `${y * 100}%`,
 });
 
-export function Pins({ room }: { room: Room }) {
+/** Warm the largest room image before zooming, so the close-up stays crisp (§5.2). */
+const preloaded = new Set<string>();
+function preloadLargest(room: Room) {
+  const entry = getImage(room.image);
+  const largest = entry?.variants[entry.variants.length - 1];
+  if (!largest || preloaded.has(largest.src)) return;
+  preloaded.add(largest.src);
+  new Image().src = assetUrl(largest.src);
+}
+
+interface PinsProps {
+  room: Room;
+  /** Set while a close-up is open: other pins fade out, this one becomes a ring. */
+  activeObjectId?: string;
+}
+
+export function Pins({ room, activeObjectId }: PinsProps) {
+  const { visited } = useVisited();
+  const [bubble, setBubble] = useState<{ id: string; n: number } | null>(null);
+
+  // The street lamp's speech bubble disappears after 3 seconds (§4.2).
+  useEffect(() => {
+    if (!bubble) return;
+    const timer = window.setTimeout(() => setBubble(null), 3000);
+    return () => window.clearTimeout(timer);
+  }, [bubble]);
+
   const items: PinItem[] = [
     ...enabledObjects(room).map((item) => ({ kind: 'object' as const, item })),
     ...room.doorways
@@ -31,22 +59,46 @@ export function Pins({ room }: { room: Room }) {
 
   let objectIndex = 0;
   return (
-    <div className={styles.layer}>
+    <div
+      className={styles.layer}
+      data-zoomed={activeObjectId ? true : undefined}
+      inert={!!activeObjectId}
+    >
       {items.map((pin) =>
         pin.kind === 'object' ? (
-          <ObjectPin key={`o-${pin.item.id}`} room={room} object={pin.item} index={objectIndex++} />
+          <ObjectPin
+            key={`o-${pin.item.id}`}
+            room={room}
+            object={pin.item}
+            index={objectIndex++}
+            active={pin.item.id === activeObjectId}
+            visited={visited.has(visitedKey(room.id, pin.item.id))}
+            onSpecial={() => setBubble((b) => ({ id: pin.item.id, n: (b?.n ?? 0) + 1 }))}
+          />
         ) : (
           <DoorwayPin key={`d-${pin.item.to}`} doorway={pin.item} />
         ),
       )}
+      {bubble && <Bubble key={bubble.n} object={room.objects.find((o) => o.id === bubble.id)} />}
     </div>
   );
 }
 
-function ObjectPin({ room, object, index }: { room: Room; object: RoomObject; index: number }) {
+interface ObjectPinProps {
+  room: Room;
+  object: RoomObject;
+  index: number;
+  active: boolean;
+  visited: boolean;
+  onSpecial: () => void;
+}
+
+function ObjectPin({ room, object, index, active, visited, onSpecial }: ObjectPinProps) {
   const { t, ui } = useT();
+  const { cycle } = usePhase();
   const navigate = useNavigate();
   const name = t(object.name);
+  const special = object.special === 'cycle-lighting';
   return (
     <button
       type="button"
@@ -54,15 +106,47 @@ function ObjectPin({ room, object, index }: { room: Room; object: RoomObject; in
       style={
         { ...position(object.x, object.y), '--pin-delay': `${index * 300}ms` } as CSSProperties
       }
-      aria-label={`${ui('open')}: ${name}`}
+      aria-label={special ? `${name}: ${ui('lighting')}` : `${ui('open')}: ${name}`}
       data-object={object.id}
-      onClick={() => navigate(objectPath(room.id, object.id))}
+      data-active={active || undefined}
+      data-visited={visited || undefined}
+      onPointerEnter={() => preloadLargest(room)}
+      onFocus={() => preloadLargest(room)}
+      onClick={() => {
+        if (special) {
+          cycle();
+          onSpecial();
+        } else {
+          navigate(objectPath(room.id, object.id));
+        }
+      }}
     >
       <span className={styles.dot} aria-hidden="true" />
       <span className={styles.label} aria-hidden="true">
         {name}
       </span>
     </button>
+  );
+}
+
+/** Speech bubble beside the street lamp; announced politely to screen readers. */
+function Bubble({ object }: { object: RoomObject | undefined }) {
+  const { t, ui } = useT();
+  const { override } = usePhase();
+  if (!object?.bubble) return null;
+  const right = object.x > 0.5;
+  return (
+    <div
+      className={styles.bubble}
+      data-side={right ? 'left' : 'right'}
+      style={position(object.x, object.y)}
+      role="status"
+    >
+      <p>{t(object.bubble)}</p>
+      <p className={styles.bubblePhase}>
+        {ui('lighting')}: {override ? ui(`phase.${override}`) : ui('auto')}
+      </p>
+    </div>
   );
 }
 

@@ -163,3 +163,72 @@
     animation: none;
   }
 }
+
+/* ---------- Close-up open: other pins fade, the active one becomes a ring ---------- */
+
+.objectPin,
+.doorPin {
+  transition: opacity var(--dur-fast) var(--ease-out-soft);
+}
+
+.layer[data-zoomed] .objectPin:not([data-active]),
+.layer[data-zoomed] .doorPin {
+  opacity: 0;
+}
+
+.layer[data-zoomed] .label {
+  opacity: 0;
+}
+
+.objectPin[data-active] .dot {
+  transform: scale(0.55);
+  background: transparent;
+  box-shadow:
+    0 0 0 3px var(--glow-lamp),
+    0 0 18px 6px color-mix(in srgb, var(--glow-lamp) 70%, transparent);
+}
+
+.objectPin[data-active] .dot::before,
+.objectPin[data-active] .dot::after {
+  display: none;
+}
+
+/* ---------- Street lamp speech bubble ---------- */
+
+.bubble {
+  position: absolute;
+  z-index: 2;
+  width: max-content;
+  max-width: 240px;
+  translate: 0 -50%;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  box-shadow: var(--shadow-soft);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  animation: bubble-in var(--dur-base) var(--ease-out-soft);
+}
+
+.bubble[data-side='left'] {
+  translate: calc(-100% - 34px) -50%;
+}
+
+.bubble[data-side='right'] {
+  translate: 34px -50%;
+}
+
+.bubblePhase {
+  margin-top: var(--space-1);
+  color: var(--color-terracotta-ink);
+  font-weight: 700;
+  font-size: var(--text-xs);
+}
+
+@keyframes bubble-in {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+}

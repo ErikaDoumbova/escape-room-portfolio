@@ -1,0 +1,297 @@
+.paragraph {
+  max-width: 62ch;
+  font-size: var(--text-md);
+  line-height: var(--leading-md);
+}
+
+/* Images */
+.figure {
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.pictureButton {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: var(--radius-md);
+  cursor: zoom-in;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.missingPicture {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  background: var(--color-paper-shade);
+  color: var(--color-ink-soft);
+  padding: var(--space-4);
+}
+
+.caption {
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+  color: var(--color-ink-soft);
+}
+
+.gallery {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+/* Phones: a horizontal strip that snaps to each drawing. */
+@media (max-width: 899px) {
+  .gallery {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    margin: 0 calc(-1 * var(--space-5));
+    padding: 0 var(--space-5) var(--space-2);
+    scrollbar-width: thin;
+  }
+  .gallery > li {
+    flex: 0 0 72%;
+    scroll-snap-align: center;
+  }
+}
+
+/* Buttons and pills */
+.pillButton {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  border: 1.5px solid var(--color-paper-shade);
+  border-radius: var(--radius-pill);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.pillButton:hover {
+  background: var(--color-paper-shade);
+}
+
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+  justify-items: start;
+}
+
+.linkRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* List (books) */
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.list > li {
+  display: grid;
+  gap: 2px;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-paper-shade);
+}
+
+.listTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+}
+
+.listSubtitle {
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.listNote {
+  font-size: var(--text-sm);
+}
+
+/* Quote */
+.quote {
+  margin: 0;
+  padding-left: var(--space-4);
+  border-left: 3px solid var(--color-terracotta);
+}
+
+.quote blockquote {
+  margin: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+}
+
+.quote figcaption {
+  margin-top: var(--space-2);
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+}
+
+/* Spotify */
+.spotifyCard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-shade);
+}
+
+.spotifyIcon {
+  flex: none;
+  color: var(--color-terracotta-ink);
+}
+
+.spotifyText {
+  flex: 1 1 12rem;
+}
+
+.spotifyTitle {
+  font-weight: 700;
+}
+
+.spotifyNotice {
+  color: var(--color-ink-soft);
+  font-size: var(--text-xs);
+  line-height: var(--leading-xs);
+}
+
+.spotifyFrame {
+  width: 100%;
+  height: 352px;
+  border: 0;
+  border-radius: var(--radius-md);
+}
+
+/* Sound toggle */
+.soundRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.soundState {
+  color: var(--color-ink-soft);
+  font-size: var(--text-sm);
+}
+
+/* Recipe card */
+.recipe {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  background: var(--color-paper-shade);
+}
+
+.chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-paper);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.recipeHeading {
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--text-lg);
+  line-height: var(--leading-lg);
+}
+
+.ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.ingredient {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  min-height: 32px;
+  cursor: pointer;
+}
+
+.ingredient input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0;
+  accent-color: var(--color-terracotta-ink);
+}
+
+.ingredient input:checked + span {
+  text-decoration: line-through;
+  color: var(--color-ink-soft);
+}
+
+.steps {
+  margin: 0;
+  padding-left: 1.4em;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.tip {
+  font-size: var(--text-sm);
+}
+
+.printButton {
+  justify-self: start;
+}
+
+.printTitle {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}

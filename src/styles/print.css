@@ -1,0 +1,37 @@
+/* Printing the recipe prints only the recipe (handoff §5.4). RecipeBlock renders
+   a clean copy into .print-root just before calling window.print(). */
+.print-root {
+  display: none;
+}
+
+@media print {
+  body:has(.print-root) > :not(.print-root) {
+    display: none !important;
+  }
+
+  body:has(.print-root) {
+    background: #fff !important;
+  }
+
+  .print-root {
+    display: block;
+    color: #000;
+    font-family: var(--font-body);
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  .print-root ul,
+  .print-root ol {
+    padding-left: 1.4em;
+  }
+
+  .print-root h1,
+  .print-root h3 {
+    font-family: var(--font-display);
+  }
+
+  .print-root li {
+    break-inside: avoid;
+  }
+}

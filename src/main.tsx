@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router';
 import './styles/fonts.css';
 import './styles/tokens.css';
 import './styles/global.css';
+import './styles/print.css';
 
 import App from './App.tsx';
 

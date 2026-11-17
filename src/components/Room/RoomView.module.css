@@ -35,3 +35,17 @@
   flex: none;
   height: max(100dvh, 560px);
 }
+
+/* While a close-up is open the room can't be scrolled; the camera owns it. */
+.viewport[data-locked] {
+  overflow: hidden;
+}
+
+.scene {
+  transform-origin: 0 0;
+  transition: transform var(--dur-camera) var(--ease-cozy);
+}
+
+.viewport[data-zoomed] .scene {
+  will-change: transform;
+}

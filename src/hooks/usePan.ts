@@ -1,12 +1,20 @@
-import { useEffect, useState, type RefObject } from 'react';
+import { useEffect, useRef, useState, type RefObject } from 'react';
 
 /**
  * Desktop panning for a horizontally scrolling room (handoff §10.1):
  * click-and-drag with the mouse and the ←/→ keys. Touch and trackpads use
  * native scrolling. Returns whether the room is wider than the window.
  */
-export function usePan(viewportRef: RefObject<HTMLElement | null>, reducedMotion: boolean) {
+export function usePan(
+  viewportRef: RefObject<HTMLElement | null>,
+  reducedMotion: boolean,
+  locked = false,
+) {
   const [pannable, setPannable] = useState(false);
+  const lockedRef = useRef(locked);
+  useEffect(() => {
+    lockedRef.current = locked;
+  }, [locked]);
 
   useEffect(() => {
     const el = viewportRef.current;
@@ -24,7 +32,7 @@ export function usePan(viewportRef: RefObject<HTMLElement | null>, reducedMotion
     let dragged = false;
 
     const onPointerDown = (e: PointerEvent) => {
-      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      if (e.pointerType !== 'mouse' || e.button !== 0 || lockedRef.current) return;
       if (el.scrollWidth <= el.clientWidth) return;
       pointerId = e.pointerId;
       startX = e.clientX;
@@ -57,7 +65,7 @@ export function usePan(viewportRef: RefObject<HTMLElement | null>, reducedMotion
     };
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
-      if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
+      if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey || lockedRef.current) return;
       const target = e.target as HTMLElement | null;
       if (target?.closest('input, textarea, select, [contenteditable], dialog')) return;
       if (document.querySelector('dialog[open]')) return;
