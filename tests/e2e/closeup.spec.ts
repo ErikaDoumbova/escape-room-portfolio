@@ -16,6 +16,12 @@ type RoomJson = {
 const rooms = [front, livingRoom, bedroom, kitchen] as RoomJson[];
 const roomPath = (id: string) => (id === 'front' ? './' : `./${id}`);
 const closeUp = (page: Page) => page.getByTestId('closeup');
+/** Number of items in the sketchbook gallery, straight from the content file. */
+const sketchbookCount = (
+  livingRoom.objects
+    .find((o) => o.id === 'sketchbook')!
+    .blocks.find((b) => b.type === 'gallery') as { items: unknown[] }
+).items.length;
 
 async function waitForRoom(page: Page, roomId: string) {
   await expect(page.locator(`main [data-room="${roomId}"]`)).toHaveCount(1);
@@ -123,9 +129,9 @@ test('images open in a lightbox that Esc closes, returning to the close-up', asy
     .click();
   const lightbox = page.locator('dialog[open]');
   await expect(lightbox).toBeVisible();
-  await expect(lightbox.locator('figcaption')).toContainText('2 of 4');
+  await expect(lightbox.locator('figcaption')).toContainText(`2 of ${sketchbookCount}`);
   await page.keyboard.press('ArrowRight');
-  await expect(lightbox.locator('figcaption')).toContainText('3 of 4');
+  await expect(lightbox.locator('figcaption')).toContainText(`3 of ${sketchbookCount}`);
 
   await page.keyboard.press('Escape');
   await expect(lightbox).toBeHidden();

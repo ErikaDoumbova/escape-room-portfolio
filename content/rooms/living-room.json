@@ -14,36 +14,37 @@
   "objects": [
     {
       "id": "poster-1",
-      "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
+      "name": { "en": "Painting: lemons", "bg": "Картина: лимони" },
       "x": 0.436, "y": 0.228, "zoom": { "scale": 2.2 },
-      "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
+      "title": { "en": "Lemons", "bg": "Лимони" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-1.png", "alt": { "en": "PLACEHOLDER — describe the poster", "bg": "PLACEHOLDER" }, "caption": { "en": "PLACEHOLDER year · tools", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this poster is about, who it was for, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-1.png", "alt": { "en": "A painting of lemons with green leaves on a wooden cutting board, on a grey background", "bg": "Картина с лимони и зелени листа върху дървена дъска, на сив фон" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
       ]
     },
     {
       "id": "poster-2",
-      "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
+      "name": { "en": "Painting: forest", "bg": "Картина: гора" },
       "x": 0.513, "y": 0.215, "zoom": { "scale": 2.2 },
-      "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
+      "title": { "en": "Forest in watercolour", "bg": "Гора в акварел" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-2.png", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-2.png", "alt": { "en": "A watercolour of a misty forest with tall trees and soft light between them", "bg": "Акварел на мъглива гора с високи дървета и мека светлина между тях" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
       ]
     },
     {
       "id": "poster-3",
-      "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
+      "name": { "en": "Drawing: flower in a light bulb", "bg": "Рисунка: цвете в крушка" },
       "x": 0.565, "y": 0.257, "zoom": { "scale": 2.2 },
-      "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
+      "title": { "en": "Flower in a light bulb", "bg": "Цвете в крушка" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-3.png", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-3.png", "alt": { "en": "An ink line drawing of a flower growing out of a broken light bulb", "bg": "Рисунка с линии на цвете, което расте от счупена крушка" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
       ]
     },
     {
       "id": "poster-4",
+      "enabled": false,
       "name": { "en": "Poster: PLACEHOLDER title", "bg": "Плакат: PLACEHOLDER" },
       "x": 0.618, "y": 0.3, "zoom": { "scale": 2.2 },
       "title": { "en": "PLACEHOLDER poster title", "bg": "PLACEHOLDER" },
@@ -56,14 +57,15 @@
       "id": "sketchbook",
       "name": { "en": "Sketchbook", "bg": "Скицник" },
       "x": 0.57, "y": 0.625,
-      "title": { "en": "Where it started", "bg": "Откъдето започна всичко" },
+      "title": { "en": "My design work", "bg": "Моят дизайн" },
       "blocks": [
-        { "type": "paragraph", "text": { "en": "Before design software, there was this — drawings from my high-school years. PLACEHOLDER: a sentence on what drawing meant to you then.", "bg": "Преди дизайнерските програми беше това — рисунки от гимназията. PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "A few of my graphic design projects: ads, a poster, a brochure and a magazine. PLACEHOLDER: a sentence about the project you're proudest of.", "bg": "Някои от проектите ми по графичен дизайн: реклами, плакат, брошура и списание. PLACEHOLDER" } },
         { "type": "gallery", "items": [
-          { "src": "art/drawings/drawing-1.jpg", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" }, "caption": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
-          { "src": "art/drawings/drawing-2.jpg", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
-          { "src": "art/drawings/drawing-3.jpg", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } },
-          { "src": "art/drawings/drawing-4.jpg", "alt": { "en": "PLACEHOLDER", "bg": "PLACEHOLDER" } }
+          { "src": "art/designs/design-1.jpg", "alt": { "en": "An ad for Bin Cosmetics: a mascara stroke becomes the skid marks of a white car, with the line \"Don't make-up and drive\"", "bg": "Реклама за Bin Cosmetics: следа от спирала се превръща в следи от гуми на бяла кола, с надпис „Don't make-up and drive“" }, "caption": { "en": "Ad concept for Bin Cosmetics", "bg": "Рекламна концепция за Bin Cosmetics" } },
+          { "src": "art/designs/design-2.jpg", "alt": { "en": "A poster with the word APRIL repeated in white on blue, and puffy pink 3D numbers 2024 floating over it", "bg": "Плакат с думата APRIL, повторена в бяло на син фон, и розови 3D цифри 2024 над нея" }, "caption": { "en": "April 2024 poster", "bg": "Плакат „Април 2024“" } },
+          { "src": "art/designs/design-3.jpg", "alt": { "en": "A tri-fold travel brochure for Travelia, with turquoise sea photos and location-pin shapes", "bg": "Сгъваема туристическа брошура за Travelia със снимки на тюркоазено море и форми на маркери за местоположение" }, "caption": { "en": "Travelia brochure", "bg": "Брошура за Travelia" } },
+          { "src": "art/designs/design-4.jpg", "alt": { "en": "A magazine ad for Travelia: a plane flying through a location-pin cut-out with palm trees and clouds", "bg": "Реклама на Travelia в списание: самолет, който лети през изрязан маркер с палми и облаци" }, "caption": { "en": "Travelia magazine ad", "bg": "Реклама на Travelia в списание" } },
+          { "src": "art/designs/design-5.jpg", "alt": { "en": "Front and back cover of LYRIC music magazine, with black-and-white photos of Shawn Mendes", "bg": "Предна и задна корица на музикалното списание LYRIC с черно-бели снимки на Шон Мендес" }, "caption": { "en": "LYRIC magazine cover", "bg": "Корица на списание LYRIC" } }
         ] }
       ]
     },

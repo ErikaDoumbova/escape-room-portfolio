@@ -16,7 +16,7 @@
       "x": 0.636, "y": 0.352, "zoom": { "scale": 2.0 },
       "title": { "en": "My favourite artist", "bg": "Любимият ми изпълнител" },
       "blocks": [
-        { "type": "image", "src": "photos/wall-poster.jpg", "alt": { "en": "My bedroom wall with the Shawn Mendes poster", "bg": "Стената в стаята ми с плаката на Шон Мендес" } },
+        { "type": "image", "src": "photos/concert.jpg", "alt": { "en": "Me at a Shawn Mendes concert, laughing and singing along, with him on the big screen behind me", "bg": "Аз на концерт на Шон Мендес — смея се и пея, а той е на големия екран зад мен" } },
         { "type": "paragraph", "text": { "en": "Shawn Mendes has been my favourite artist for years — and yes, this poster really is on my wall. PLACEHOLDER: why his music matters to you / a favourite song.", "bg": "Шон Мендес е любимият ми изпълнител от години — и да, този плакат наистина виси на стената ми. PLACEHOLDER" } },
         { "type": "spotify", "title": { "en": "My favourites", "bg": "Любимите ми песни" } }
       ]
