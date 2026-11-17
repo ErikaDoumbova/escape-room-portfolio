@@ -153,10 +153,10 @@ test('printing the recipe prints only the recipe', async ({ page }) => {
   await expect(page.locator('.print-root')).toBeVisible();
 });
 
-test('the street lamp cycles the lighting instead of opening a close-up', async ({ page }) => {
+test('the rooftop terrace cycles the lighting instead of opening a close-up', async ({ page }) => {
   await page.goto('./');
   await waitForRoom(page, 'front');
-  await page.getByRole('button', { name: 'Street lamp: Lighting' }).click();
+  await page.getByRole('button', { name: 'Rooftop terrace: Lighting' }).click();
   await expect(page.getByText("I'm a night person, honestly. Click me again.")).toBeVisible();
   await expect(closeUp(page)).toHaveCount(0);
   await expect(page).toHaveURL(/\/$/);
