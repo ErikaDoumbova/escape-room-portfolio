@@ -18,8 +18,8 @@
       "x": 0.436, "y": 0.228, "zoom": { "scale": 2.2 },
       "title": { "en": "Lemons", "bg": "Лимони" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-1.png", "alt": { "en": "A painting of lemons with green leaves on a wooden cutting board, on a grey background", "bg": "Картина с лимони и зелени листа върху дървена дъска, на сив фон" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-1.png", "alt": { "en": "A painting of lemons with green leaves on a wooden cutting board, on a grey background", "bg": "Картина с лимони и зелени листа върху дървена дъска, на сив фон" }, "caption": { "en": "Tempera", "bg": "Темпера" } },
+        { "type": "paragraph", "text": { "en": "I painted this with tempera, and working with the shadows was a good challenge for me. Fun fact: the only colours I used were the primaries red, blue and yellow — every other colour here comes from mixing them.", "bg": "Нарисувах я с темпера и работата със сенките беше добро предизвикателство за мен. Интересен факт: използвах само основните цветове — червено, синьо и жълто, а всички останали цветове тук са получени чрез смесването им." } }
       ]
     },
     {
@@ -28,8 +28,8 @@
       "x": 0.513, "y": 0.215, "zoom": { "scale": 2.2 },
       "title": { "en": "Forest in watercolour", "bg": "Гора в акварел" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-2.png", "alt": { "en": "A watercolour of a misty forest with tall trees and soft light between them", "bg": "Акварел на мъглива гора с високи дървета и мека светлина между тях" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-2.png", "alt": { "en": "A watercolour of a misty forest with tall trees and soft light between them", "bg": "Акварел на мъглива гора с високи дървета и мека светлина между тях" }, "caption": { "en": "Watercolour", "bg": "Акварел" } },
+        { "type": "paragraph", "text": { "en": "It's inspired by Claude Monet and the way he expresses himself on the canvas. It was my first time using watercolour, and to me this painting means peace.", "bg": "Вдъхновена е от Клод Моне и начина, по който той се изразява върху платното. За първи път рисувах с акварел и за мен тази картина означава спокойствие." } }
       ]
     },
     {
@@ -38,8 +38,8 @@
       "x": 0.565, "y": 0.257, "zoom": { "scale": 2.2 },
       "title": { "en": "Flower in a light bulb", "bg": "Цвете в крушка" },
       "blocks": [
-        { "type": "image", "src": "art/posters/poster-3.png", "alt": { "en": "An ink line drawing of a flower growing out of a broken light bulb", "bg": "Рисунка с линии на цвете, което расте от счупена крушка" }, "caption": { "en": "PLACEHOLDER year · materials", "bg": "PLACEHOLDER" } },
-        { "type": "paragraph", "text": { "en": "PLACEHOLDER — what this piece is about, when you made it, and what you're proud of in it.", "bg": "PLACEHOLDER" } }
+        { "type": "image", "src": "art/posters/poster-3.png", "alt": { "en": "An ink line drawing of a flower growing out of a broken light bulb", "bg": "Рисунка с линии на цвете, което расте от счупена крушка" }, "caption": { "en": "Fine-point pen on paper", "bg": "Тънкописец върху хартия" } },
+        { "type": "paragraph", "text": { "en": "A very simple drawing made with just a fine-point pen. To me it shows how my creativity sometimes comes out in the most unexpected ways.", "bg": "Много семпла рисунка, направена само с тънкописец. За мен тя показва как креативността ми понякога се проявява по най-неочаквани начини." } }
       ]
     },
     {

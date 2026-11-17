@@ -17,7 +17,7 @@
       "title": { "en": "My favourite artist", "bg": "Любимият ми изпълнител" },
       "blocks": [
         { "type": "image", "src": "photos/concert.jpg", "alt": { "en": "Me at a Shawn Mendes concert, laughing and singing along, with him on the big screen behind me", "bg": "Аз на концерт на Шон Мендес — смея се и пея, а той е на големия екран зад мен" } },
-        { "type": "paragraph", "text": { "en": "Shawn Mendes has been my favourite artist for years — and yes, this poster really is on my wall. PLACEHOLDER: why his music matters to you / a favourite song.", "bg": "Шон Мендес е любимият ми изпълнител от години — и да, този плакат наистина виси на стената ми. PLACEHOLDER" } },
+        { "type": "paragraph", "text": { "en": "Maybe it's a cliché that Shawn Mendes is my favourite artist, but his music has really helped me in my personal life. I've gone through a ton of hard moments, and the one song that's always on repeat is “There's Nothing Holdin' Me Back”. When I lost one of my best friends from high school to cancer, his music is what helped me cope. I like his morals and values, and I think he's a good example of how a famous person should act.", "bg": "Може би е клише, че Шон Мендес е любимият ми изпълнител, но музиката му наистина ми е помагала в личния живот. Преминала съм през много трудни моменти и песента, която винаги е на повторение, е „There's Nothing Holdin' Me Back“. Когато загубих един от най-близките си хора от гимназията заради рак, неговата музика ми помогна да се справя. Харесвам неговия морал и ценности и смятам, че той е добър пример за това как трябва да се държи един известен човек." } },
         { "type": "spotify", "title": { "en": "My favourites", "bg": "Любимите ми песни" } }
       ]
     },
